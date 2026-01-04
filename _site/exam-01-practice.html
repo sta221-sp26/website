@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – STA 221 - Spring 2026</title>
+<title>Exam 01 practice – STA 221 - Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,6 +104,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -116,7 +145,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">About</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Exam 01 practice</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -349,15 +378,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link active" data-scroll-target="#exercise-1">Exercise 1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
+  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5">Exercise 5</a></li>
+  <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6">Exercise 6</a></li>
+  <li><a href="#exercise-7" id="toc-exercise-7" class="nav-link" data-scroll-target="#exercise-7">Exercise 7</a></li>
+  <li><a href="#exercise-8" id="toc-exercise-8" class="nav-link" data-scroll-target="#exercise-8">Exercise 8</a></li>
+  <li><a href="#exercise-9" id="toc-exercise-9" class="nav-link" data-scroll-target="#exercise-9">Exercise 9</a></li>
+  <li><a href="#exercise-10" id="toc-exercise-10" class="nav-link" data-scroll-target="#exercise-10">Exercise 10</a></li>
+  <li><a href="#exercise-11" id="toc-exercise-11" class="nav-link" data-scroll-target="#exercise-11">Exercise 11</a></li>
+  <li><a href="#exercise-12" id="toc-exercise-12" class="nav-link" data-scroll-target="#exercise-12">Exercise 12</a></li>
+  <li><a href="#exercise-13" id="toc-exercise-13" class="nav-link" data-scroll-target="#exercise-13">Exercise 13</a></li>
+  <li><a href="#exercise-14" id="toc-exercise-14" class="nav-link" data-scroll-target="#exercise-14">Exercise 14</a></li>
+  <li><a href="#exercise-15" id="toc-exercise-15" class="nav-link" data-scroll-target="#exercise-15">Exercise 15</a></li>
+  <li><a href="#relevant-lectures-assignments-and-aes" id="toc-relevant-lectures-assignments-and-aes" class="nav-link" data-scroll-target="#relevant-lectures-assignments-and-aes">Relevant lectures, assignments and AEs</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sta221-sp26/website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Exam 01 practice</h1>
 </div>
 
 
@@ -374,15 +424,220 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This page contains practice problems to help prepare for Exam 01. This set of practice problems is <u><strong>not</strong></u> comprehensive. You should review these <a href="./slides/10-inference-pt3#/tips-for-studying">study tips</a> as you prepare for the exam.<br>
+<br>
+There is no answer key for these problems. You may ask questions in office hours and on Ed Discussion.</p>
+</div>
+</div>
+<section id="exercise-1" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1">Exercise 1</h2>
+<p>We will use data from <code>nrow(penguins)</code> penguins at Palmer Station in Antartica to fit linear regression model model using species (Adelie, Chinstrap, or Gentoo), flipper length (in millimeters), and bill depth (in millimeters) to predict its body mass (in grams). <a href="https://allisonhorst.github.io/palmerpenguins/reference/penguins.html">Click here</a> to read more about the variables.</p>
+<p>The linear regression model has the form</p>
+<p><span class="math display">\[
+\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon}
+\]</span>Write the dimensions of <span class="math inline">\(\mathbf{y}, \mathbf{X},\boldsymbol{\beta}, \boldsymbol{\epsilon}\)</span> specifically for this analysis.</p>
+</section>
+<section id="exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2">Exercise 2</h2>
+<p>The output for the model described in Exercise 1, along with 95% confidence intervals for the model coefficients, is shown below:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>penguins_fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> species <span class="sc">+</span> flipper_length_mm <span class="sc">+</span> </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                     bill_depth_mm <span class="sc">+</span> body_mass_g, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">data =</span> penguins)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in model.matrix.default(mt, mf, contrasts): the response appeared on
+the right-hand side and was dropped</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in model.matrix.default(mt, mf, contrasts): problem with term 4 in
+model.matrix: no columns are assigned</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tidy</span>(penguins_fit,<span class="at">conf.int =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">term</th>
+<th style="text-align: right;">estimate</th>
+<th style="text-align: right;">std.error</th>
+<th style="text-align: right;">statistic</th>
+<th style="text-align: right;">p.value</th>
+<th style="text-align: right;">conf.low</th>
+<th style="text-align: right;">conf.high</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-4526.887</td>
+<td style="text-align: right;">516.931</td>
+<td style="text-align: right;">-8.757</td>
+<td style="text-align: right;">0.000</td>
+<td style="text-align: right;">-5543.705</td>
+<td style="text-align: right;">-3510.068</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">speciesChinstrap</td>
+<td style="text-align: right;">-131.968</td>
+<td style="text-align: right;">51.400</td>
+<td style="text-align: right;">-2.567</td>
+<td style="text-align: right;">0.011</td>
+<td style="text-align: right;">-233.073</td>
+<td style="text-align: right;">-30.863</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">speciesGentoo</td>
+<td style="text-align: right;">1288.968</td>
+<td style="text-align: right;">132.774</td>
+<td style="text-align: right;">9.708</td>
+<td style="text-align: right;">0.000</td>
+<td style="text-align: right;">1027.798</td>
+<td style="text-align: right;">1550.138</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">flipper_length_mm</td>
+<td style="text-align: right;">25.700</td>
+<td style="text-align: right;">3.098</td>
+<td style="text-align: right;">8.295</td>
+<td style="text-align: right;">0.000</td>
+<td style="text-align: right;">19.606</td>
+<td style="text-align: right;">31.794</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">bill_depth_mm</td>
+<td style="text-align: right;">182.364</td>
+<td style="text-align: right;">18.358</td>
+<td style="text-align: right;">9.934</td>
+<td style="text-align: right;">0.000</td>
+<td style="text-align: right;">146.252</td>
+<td style="text-align: right;">218.475</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
+<ul>
+<li><p>Interpret the coefficient of <code>flipper_length_mm</code> in the context of the data.</p></li>
+<li><p>What is the baseline category for <code>speices</code>?</p></li>
+<li><p>Interpret the coefficient of <code>speciesChinstrap</code> in the context of the data.</p></li>
+</ul>
+</section>
+<section id="exercise-3" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3">Exercise 3</h2>
+<ul>
+<li><p>Does the intercept have a meaningful interpretation?</p></li>
+<li><p>If not, what are some strategies we can use to fit a model such that the intercept is meaningful?</p></li>
+</ul>
+</section>
+<section id="exercise-4" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-4">Exercise 4</h2>
+<p>There are three species in the data set (Adelie, Chinstrap, Gentoo), but only two terms for species in the model. Use the design matrix to show why we cannot put indicators for all three species and the intercept in the model.</p>
+</section>
+<section id="exercise-5" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-5">Exercise 5</h2>
+<p>We conduct the following hypothesis test for the coefficient of <code>flipper_length_mm</code>.</p>
+<ul>
+<li><p><strong>Null:</strong> There is no linear relationship between flipper length and body mass, after accounting for species and bill depth</p></li>
+<li><p><strong>Alternative</strong>: There is a linear relationship between flipper length and body mass, after accounting for species and bill depth</p></li>
+</ul>
+<ol type="a">
+<li>Write these hypotheses in mathematical notation.</li>
+<li>The standard error is 3.098. Explain how this value is computed and what this value means in the context of the data.</li>
+<li>The test statistic is 8.295. Explain how this value is computed and what this value means in the context of the data.</li>
+<li>What distribution is used to compute the p-value?</li>
+<li>What is the conclusion from the test in the context of the data?</li>
+</ol>
+</section>
+<section id="exercise-6" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-6">Exercise 6</h2>
+<ol type="1">
+<li>Interpret the 95% confidence interval for <code>flipper_length_mm</code> in the context of the data.</li>
+<li>Is the interval consistent with the test from the previous exercise? Briefly explain.</li>
+</ol>
+</section>
+<section id="exercise-7" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-7">Exercise 7</h2>
+<p>Sketch a scatterplot of the relationship between bill depth and body mass such that the effect of bill depth differs by species.</p>
+</section>
+<section id="exercise-8" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-8">Exercise 8</h2>
+<p>When we conduct inference for regression, we assume the following distribution for <span class="math inline">\(\mathbf{y}|\mathbf{X}\)</span></p>
+<p><span class="math display">\[
+\mathbf{y}|\mathbf{X} \sim(\mathbf{X}\boldsymbol{\beta}, \sigma^2_\epsilon\mathbf{I})
+\]</span></p>
+<ol type="a">
+<li>Show that <span class="math inline">\(E(\mathbf{y}|\mathbf{X}) = \mathbf{X}\boldsymbol{\beta}\)</span></li>
+<li>Show that <span class="math inline">\(Var(\mathbf{y}|\mathbf{X})= \sigma^2_{\epsilon}\mathbf{I}\)</span></li>
+</ol>
+<p>See February 4 lecture <a href="https://sta221-sp25.netlify.app/slides/08-inference#/title-slide">“Inference for Regression”</a> to check your work.</p>
+</section>
+<section id="exercise-9" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-9">Exercise 9</h2>
+<p>We conduct inference on the coefficients <span class="math inline">\(\boldsymbol{\beta}\)</span> assuming that the variability of <span class="math inline">\(\mathbf{y}|\mathbf{X}\)</span> is constant for value (or combination) of predictors. Briefly explain why is assumption is important.</p>
+</section>
+<section id="exercise-10" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-10">Exercise 10</h2>
+<p>Given the model <span class="math inline">\(\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon}\)</span>, derive the least-squares estimator <span class="math inline">\(\hat{\boldsymbol{\beta}}\)</span> using matrix calculus.</p>
+<p>See January 21 lecture <a href="https://sta221-sp25.netlify.app/slides/04-slr-matrix#/title-slide">“SLR: Matrix representation”</a> to check your work.</p>
+</section>
+<section id="exercise-11" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-11">Exercise 11</h2>
+<p>Given the model <span class="math inline">\(\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon}\)</span>, derive the least-squares estimator <span class="math inline">\(\hat{\boldsymbol{\beta}}\)</span> using the geometric interpretation of the model.</p>
+<p>See January 23 lecture <a href="https://sta221-sp25.netlify.app/slides/05-geometry#/title-slide">“Geometric interpretation of least-squares regression”</a> to check your work.</p>
+</section>
+<section id="exercise-12" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-12">Exercise 12</h2>
+<p>Explain why we say “holding all else constant” when interpreting the coefficients in a multiple linear regression model.</p>
+</section>
+<section id="exercise-13" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-13">Exercise 13</h2>
+<p>Suppose we have two models:</p>
+<ul>
+<li><p>Model 1 includes predictors <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span></p></li>
+<li><p>Model 2 includes predictors <span class="math inline">\(X_1, X_2, X_3\)</span> and <span class="math inline">\(X_4\)</span></p></li>
+</ul>
+<p>Explain why we should use <span class="math inline">\(Adj. R^2\)</span> and not <span class="math inline">\(R^2\)</span> to compare these models.</p>
+</section>
+<section id="exercise-14" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-14">Exercise 14</h2>
+<p>Rework Exercises 1 - 5 in <a href="./hw/hw-01.html">HW 01</a> for more practice with theory and math.</p>
+</section>
+<section id="exercise-15" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-15">Exercise 15</h2>
+<p>Rework Exercises 1 - 5 in <a href="./hw/hw-02.html">HW 02</a> for more practice with theory and math.</p>
+</section>
+<section id="relevant-lectures-assignments-and-aes" class="level2">
+<h2 class="anchored" data-anchor-id="relevant-lectures-assignments-and-aes">Relevant lectures, assignments and AEs</h2>
+<p>Ask yourself “why” questions as you the slides, review your answers, process, and derivations on these assignments. It may also be helpful to explain your process to others.</p>
+<ul>
+<li><p>Lectures: January 9 - February 13 (February 13 lecture is an exam review)</p></li>
+<li><p>HW 01 - 02</p></li>
+<li><p>Lab 01 - 04 (Lab 04 is an exam review)</p></li>
+<li><p>AE 01 - 04 (AE 04 is an exam review)</p></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -793,7 +1048,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/sta221-sp26/website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sta221-sp26/website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This site is built with <a href="https://quarto.org/">Quarto</a></p>
 </div>

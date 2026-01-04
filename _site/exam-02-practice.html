@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – STA 221 - Spring 2026</title>
+<title>Exam 02 practice – STA 221 - Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -104,6 +69,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -116,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">About</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Exam 02 practice</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -349,15 +343,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#maximum-likelihood-estimation" id="toc-maximum-likelihood-estimation" class="nav-link active" data-scroll-target="#maximum-likelihood-estimation">Maximum likelihood estimation</a>
+  <ul class="collapse">
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
+  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5">Exercise 5</a></li>
+  </ul></li>
+  <li><a href="#multiple-linear-regression-diagnostics-multicollinearity-variable-transformations-comparison" id="toc-multiple-linear-regression-diagnostics-multicollinearity-variable-transformations-comparison" class="nav-link" data-scroll-target="#multiple-linear-regression-diagnostics-multicollinearity-variable-transformations-comparison">Multiple linear regression (diagnostics, multicollinearity, variable transformations, comparison)</a>
+  <ul class="collapse">
+  <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6">Exercise 6</a></li>
+  <li><a href="#exercise-7" id="toc-exercise-7" class="nav-link" data-scroll-target="#exercise-7">Exercise 7</a></li>
+  <li><a href="#exercise-8" id="toc-exercise-8" class="nav-link" data-scroll-target="#exercise-8">Exercise 8</a></li>
+  <li><a href="#exercise-9" id="toc-exercise-9" class="nav-link" data-scroll-target="#exercise-9">Exercise 9</a></li>
+  <li><a href="#exercise-10" id="toc-exercise-10" class="nav-link" data-scroll-target="#exercise-10">Exercise 10</a></li>
+  <li><a href="#exercise-11" id="toc-exercise-11" class="nav-link" data-scroll-target="#exercise-11">Exercise 11</a></li>
+  </ul></li>
+  <li><a href="#logistic-regression" id="toc-logistic-regression" class="nav-link" data-scroll-target="#logistic-regression">Logistic regression</a>
+  <ul class="collapse">
+  <li><a href="#exercise-12" id="toc-exercise-12" class="nav-link" data-scroll-target="#exercise-12">Exercise 12</a></li>
+  <li><a href="#exercise-13" id="toc-exercise-13" class="nav-link" data-scroll-target="#exercise-13">Exercise 13</a></li>
+  <li><a href="#exercise-141" id="toc-exercise-141" class="nav-link" data-scroll-target="#exercise-141">Exercise 14</a></li>
+  <li><a href="#exercise-15" id="toc-exercise-15" class="nav-link" data-scroll-target="#exercise-15">Exercise 15</a></li>
+  <li><a href="#exercise-16" id="toc-exercise-16" class="nav-link" data-scroll-target="#exercise-16">Exercise 16</a></li>
+  <li><a href="#exercise-17" id="toc-exercise-17" class="nav-link" data-scroll-target="#exercise-17">Exercise 17</a></li>
+  <li><a href="#exercise-18" id="toc-exercise-18" class="nav-link" data-scroll-target="#exercise-18">Exercise 18</a></li>
+  </ul></li>
+  <li><a href="#relevant-assignments-and-aes" id="toc-relevant-assignments-and-aes" class="nav-link" data-scroll-target="#relevant-assignments-and-aes">Relevant assignments and AEs</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sta221-sp26/website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Exam 02 practice</h1>
 </div>
 
 
@@ -374,17 +401,175 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>This page contains practice problems to help prepare for Exam 02. This set of practice problems is <u><strong>not</strong></u> comprehensive. You should review these <a href="./slides/10-inference-pt3#/tips-for-studying">study tips</a> as you prepare for the exam.<br>
+<br>
+There is no answer key for these problems. You may ask questions in office hours and on Ed Discussion.</p>
+</div>
+</div>
+<section id="maximum-likelihood-estimation" class="level1">
+<h1>Maximum likelihood estimation</h1>
+<section id="exercise-1" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1">Exercise 1</h2>
+<p>Given the simple linear regression model</p>
+<p><span class="math display">\[y_i = \beta_0 + \beta_1x_i + \epsilon_i, \hspace{10mm} \epsilon_i \sim N(0, \sigma^2_{\epsilon})\]</span></p>
+<p>Write the likelihood function and use it to show that the maximum likelihood estimators (MLEs) of <span class="math inline">\(\beta_0\)</span>, <span class="math inline">\(\beta_1\)</span>, and <span class="math inline">\(\sigma^2_{\epsilon}\)</span> are of the form shown on <a href="https://sta221-sp25.netlify.app/slides/16-mle#/mle-for-beta_0-1">this slide</a> <span class="math inline">\((\tilde{\beta}_0)\)</span> and <a href="https://sta221-sp25.netlify.app/slides/16-mle#/mle-for-beta_1-and-sigma2_epsilon">this slide</a> <span class="math inline">\((\tilde{\beta}_1, \tilde{\sigma}^2_{\epsilon})\)</span> .</p>
+</section>
+<section id="exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2">Exercise 2</h2>
+<p>Given the linear regression model</p>
+<p><span class="math display">\[
+\mathbf{y}  = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon} \hspace{10mm} \boldsymbol{\epsilon} \sim N(\mathbf{0}, \sigma^2_{\epsilon}\mathbf{I})
+\]</span></p>
+<p>Write the likelihood function and use it to show that the maximum likelihood estimators (MLEs) of <span class="math inline">\(\boldsymbol{\beta}\)</span> and <span class="math inline">\(\sigma^2_{\epsilon}\)</span> are</p>
+<p><span class="math display">\[
+\tilde{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y} \hspace{10mm} \tilde{\sigma}^2_{\epsilon} = \frac{1}{n}(\mathbf{y} - \mathbf{X}\tilde{\boldsymbol{\beta}})^T(\mathbf{y} - \mathbf{X}\tilde{\boldsymbol{\beta}})
+\]</span></p>
+</section>
+<section id="exercise-3" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3">Exercise 3</h2>
+<p>Given the logistic regression model</p>
+<p><span class="math display">\[
+\log\Big(\frac{\pi}{1-\pi}\Big) = \mathbf{X}\boldsymbol{\beta}
+\]</span></p>
+<ul>
+<li><p>Write the likelihood function</p></li>
+<li><p>Rework the derivation from the March 27 lecture to show the derivative solved to find the MLEs is of the form on <a href="https://sta221-sp25.netlify.app/slides/19-logistic-regression#/finding-the-mle">this slide</a>. (You can check your answer using the board work posted in Canvas).</p></li>
+</ul>
+</section>
+<section id="exercise-4" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-4">Exercise 4</h2>
+<p>Suppose <span class="math inline">\(Y_1, \ldots, Y_n\)</span> are an independent and identically distributed (iid) sample from some distribution</p>
+<p><span class="math display">\[f_Y(y) = \theta(1 - \theta)^{y-1}\]</span></p>
+<p>such that <span class="math inline">\(y\)</span> takes on positive integer values and <span class="math inline">\(0 &lt; \theta &lt; 1\)</span>. Show that the MLE for <span class="math inline">\(\theta^{-1}\)</span> is <span class="math inline">\(\frac{1}{n}\sum_{i=1}^n y_i\)</span> .</p>
+</section>
+<section id="exercise-5" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-5">Exercise 5</h2>
+<p>Rework Exercises 1 - 2 in <a href="https://sta221-sp25.netlify.app/hw/hw-04">HW 04</a>.</p>
+</section>
+</section>
+<section id="multiple-linear-regression-diagnostics-multicollinearity-variable-transformations-comparison" class="level1">
+<h1>Multiple linear regression (diagnostics, multicollinearity, variable transformations, comparison)</h1>
+<section id="exercise-6" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-6">Exercise 6</h2>
+<p>Suppose we fit a linear model with a log transformation on the response variable, i.e.,</p>
+<p><span class="math display">\[
+\widehat{\log(y_i)} = \hat{\beta}_0 + \hat{\beta}_1x_1 + \dots + \hat{\beta}_p x_p
+\]</span></p>
+<ul>
+<li><p>Show mathematically why the slope for <span class="math inline">\(x_j\)</span> and intercept are interpreted in terms of <span class="math inline">\(y\)</span> as shown on <a href="https://sta221-sp25.netlify.app/slides/14-variable-transformations#/model-interpretation">this slide</a>.</p></li>
+<li><p>Show how <span class="math inline">\(y\)</span> is expected to change if <span class="math inline">\(x_j\)</span> increases by <span class="math inline">\(t\)</span> units.</p></li>
+</ul>
+</section>
+<section id="exercise-7" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-7">Exercise 7</h2>
+<p>Suppose we fit a linear model with a log transformation on one predictor variable, i.e.,</p>
+<p><span class="math display">\[\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1\log (x_1) + \dots + \hat{\beta}_p x_p
+\]</span></p>
+<p>Show mathematically why the slope and intercept are interpreted as shown on <a href="https://sta221-sp25.netlify.app/slides/15-transformations-contd#/model-interpretation">this slide</a> when <span class="math inline">\(x\)</span> is multiplied by a factor <span class="math inline">\(C\)</span>.</p>
+</section>
+<section id="exercise-8" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-8">Exercise 8</h2>
+<p>Rework Exercise 1 in <a href="https://sta221-sp25.netlify.app/hw/hw-03">HW 03</a>.</p>
+</section>
+<section id="exercise-9" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-9">Exercise 9</h2>
+<p>Recall that for the linear regression, the variance of the estimated coefficients are the diagonal elements of <span class="math inline">\(Var(\hat{\boldsymbol{\beta}}) = \hat{\sigma}^2_{\epsilon}(\mathbf{X}^T\mathbf{X})^{-1}\)</span>. One of the <a href="https://sta221-sp25.netlify.app/slides/13-multicollinearity.html?q=multicollin#/how-multicollinearity-impacts-model">impacts of multicollinearity</a> is that the model coefficients will have large variances. Explain why.</p>
+</section>
+<section id="exercise-10" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-10">Exercise 10</h2>
+<p>Suppose you fit a simple linear regression model.</p>
+<ul>
+<li><p>Draw a scatterplot that contains an observation with large leverage but low Cook’s distance.</p></li>
+<li><p>Draw a scatterplot that contains an observation with large leverage and high Cook’s distance.</p></li>
+<li><p>Draw a scatterplot that contains an observation with a large studentized residual.</p></li>
+</ul>
+</section>
+<section id="exercise-11" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-11">Exercise 11</h2>
+<ul>
+<li><p>What is an advantage of examining a plot of studentized residuals vs.&nbsp;fitted values rather than using the raw residuals?</p></li>
+<li><p>Explain what is measured by Cook’s distance. You don’t need to memorize the formula but rather describe what the formula is quantifying for each observation. <a href="https://sta221-sp25.netlify.app/slides/12-conditions-diagnostics.html?q=cook#/cooks-distance-1">Click here</a> for the formula (slide also contains the solution).</p></li>
+</ul>
+</section>
+</section>
+<section id="logistic-regression" class="level1">
+<h1>Logistic regression</h1>
+<section id="exercise-12" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-12">Exercise 12</h2>
+<p>Write the hypotheses being tested in the drop-in-deviance test output on <a href="https://sta221-sp25.netlify.app/slides/22-logistic-inference#/add-interactions-with-currentsmoker">this slide</a>. Explain how each value in the table is computed.</p>
+</section>
+<section id="exercise-13" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-13">Exercise 13</h2>
+<ul>
+<li><p>What is an advantage of using a drop-in-deviance test instead of AIC (or BIC) to compare regression models?</p></li>
+<li><p>What is an advantage of using AIC (or BIC) instead of a drop-in-deviance test to compare regression models?</p></li>
+</ul>
+</section>
+<section id="exercise-141" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-141">Exercise 14<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></h2>
+<ul>
+<li><p>On average, what fraction of people with an odds of 0.37 of defaulting on their credit card payment will in fact default?</p></li>
+<li><p>Suppose an individual has a 16% chance of defaulting on their credit card payment. What are the odds they will default?</p></li>
+</ul>
+</section>
+<section id="exercise-15" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-15">Exercise 15</h2>
+<p>Recall the model using age and education to predict odds of being high risk for heart disease.</p>
+<ul>
+<li><p>Show mathematically why the interpretation for the slope for <code>age</code> in terms of the log-odds is in the form shown on <a href="https://sta221-sp25.netlify.app/slides/19-logistic-regression#/interpretation-in-terms-of-log-odds-1">this slide</a>.</p></li>
+<li><p>Show mathematically why the interpretation for the slope of <code>age</code> in terms of the odds is in the form shown on <a href="https://sta221-sp25.netlify.app/slides/19-logistic-regression#/interpretation-in-terms-of-odds-1">this slide</a>.</p></li>
+</ul>
+</section>
+<section id="exercise-16" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-16">Exercise 16</h2>
+<p>Recall the model using age and education to predict odds of being high risk for heart disease.</p>
+<ul>
+<li><p>Show mathematically why the interpretation for the slope for <code>education4</code> in terms of the log-odds is in the form shown on <a href="https://sta221-sp25.netlify.app/slides/19-logistic-regression#/interpretation-in-terms-of-log-odds">this slide</a>.</p></li>
+<li><p>Show mathematically why the interpretation for the slope of <code>education4</code>in terms of the odds is in the form shown on <a href="https://sta221-sp25.netlify.app/slides/19-logistic-regression#/interpretation-in-terms-of-odds">this slide</a>.</p></li>
+</ul>
+</section>
+<section id="exercise-17" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-17">Exercise 17</h2>
+<p>Explain why the slope of the logistic regression model is called the Adjusted Odds Ratio (or just Odds Ratio if there is one predictor).</p>
+</section>
+<section id="exercise-18" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-18">Exercise 18</h2>
+<ul>
+<li><p>Draw an example of an ROC curve such that the AUC is about 0.55</p></li>
+<li><p>Draw an example of an ROC curve such that the AUC is about 0.9.</p></li>
+<li><p>Explain what each point on an ROC curve represents.</p></li>
+</ul>
+</section>
+</section>
+<section id="relevant-assignments-and-aes" class="level1">
+<h1>Relevant assignments and AEs</h1>
+<p>The following assignments and AEs cover Exam 02 content. Ask yourself “why” questions as your review your answers, process, and derivations on these assignments. It may also be helpful to explain your process to others.</p>
+<ul>
+<li><p>HW 03, HW 04</p></li>
+<li><p>Lab 05, Lab 06, Lab 07</p></li>
+<li><p>AE 04, AE 05</p></li>
+</ul>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>From <em>Introduction to Statistical Learning</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -793,7 +978,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/sta221-sp26/website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sta221-sp26/website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This site is built with <a href="https://quarto.org/">Quarto</a></p>
 </div>
