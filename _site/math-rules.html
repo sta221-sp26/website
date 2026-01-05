@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Course support – STA 221 - Spring 2026</title>
+<title>Math rules – STA 221 - Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./index.html" rel="next">
-<link href="./syllabus.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -71,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -83,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./support.html">Support</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Math rules</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -143,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./support.html" class="sidebar-item-text sidebar-link active">
+  <a href="./support.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Support</span></a>
   </div>
 </li>
@@ -327,15 +354,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lectures-and-labs" id="toc-lectures-and-labs" class="nav-link active" data-scroll-target="#lectures-and-labs">Lectures and labs</a></li>
-  <li><a href="#office-hours" id="toc-office-hours" class="nav-link" data-scroll-target="#office-hours">Office hours</a></li>
-  <li><a href="#ed-discussion" id="toc-ed-discussion" class="nav-link" data-scroll-target="#ed-discussion">Ed Discussion</a></li>
-  <li><a href="#email" id="toc-email" class="nav-link" data-scroll-target="#email">Email</a></li>
-  <li><a href="#academic-support" id="toc-academic-support" class="nav-link" data-scroll-target="#academic-support">Academic support</a></li>
-  <li><a href="#mental-health-and-wellness" id="toc-mental-health-and-wellness" class="nav-link" data-scroll-target="#mental-health-and-wellness">Mental health and wellness</a></li>
-  <li><a href="#technology-accommodations" id="toc-technology-accommodations" class="nav-link" data-scroll-target="#technology-accommodations">Technology accommodations</a></li>
-  <li><a href="#course-materials-costs" id="toc-course-materials-costs" class="nav-link" data-scroll-target="#course-materials-costs">Course materials costs</a></li>
-  <li><a href="#assistance-with-zoom-or-canvas" id="toc-assistance-with-zoom-or-canvas" class="nav-link" data-scroll-target="#assistance-with-zoom-or-canvas">Assistance with Zoom or Canvas</a></li>
+  <li><a href="#matrix-calculus" id="toc-matrix-calculus" class="nav-link active" data-scroll-target="#matrix-calculus">Matrix calculus</a>
+  <ul class="collapse">
+  <li><a href="#definition-of-gradient" id="toc-definition-of-gradient" class="nav-link" data-scroll-target="#definition-of-gradient">Definition of gradient</a></li>
+  <li><a href="#gradient-of-mathbfxmathsftmathbfz" id="toc-gradient-of-mathbfxmathsftmathbfz" class="nav-link" data-scroll-target="#gradient-of-mathbfxmathsftmathbfz">Gradient of <span class="math inline">\(\mathbf{x}^\mathsf{T}\mathbf{z}\)</span></a></li>
+  <li><a href="#gradient-of-mathbfxmathsftmathbfamathbfx" id="toc-gradient-of-mathbfxmathsftmathbfamathbfx" class="nav-link" data-scroll-target="#gradient-of-mathbfxmathsftmathbfamathbfx">Gradient of <span class="math inline">\(\mathbf{x}^\mathsf{T}\mathbf{A}\mathbf{x}\)</span></a></li>
+  <li><a href="#hessian-matrix" id="toc-hessian-matrix" class="nav-link" data-scroll-target="#hessian-matrix">Hessian matrix</a></li>
+  </ul></li>
+  <li><a href="#expected-value" id="toc-expected-value" class="nav-link" data-scroll-target="#expected-value">Expected value</a>
+  <ul class="collapse">
+  <li><a href="#expected-value-of-random-variable-x" id="toc-expected-value-of-random-variable-x" class="nav-link" data-scroll-target="#expected-value-of-random-variable-x">Expected value of random variable <span class="math inline">\(X\)</span></a></li>
+  <li><a href="#expected-value-of-vector-mathbfz" id="toc-expected-value-of-vector-mathbfz" class="nav-link" data-scroll-target="#expected-value-of-vector-mathbfz">Expected value of vector <span class="math inline">\(\mathbf{z}\)</span></a></li>
+  <li><a href="#expected-value-of-vector-mathbfaz" id="toc-expected-value-of-vector-mathbfaz" class="nav-link" data-scroll-target="#expected-value-of-vector-mathbfaz">Expected value of vector <span class="math inline">\(\mathbf{Az}\)</span></a></li>
+  <li><a href="#expected-value-of-mathbfaz-mathbfc" id="toc-expected-value-of-mathbfaz-mathbfc" class="nav-link" data-scroll-target="#expected-value-of-mathbfaz-mathbfc">Expected value of <span class="math inline">\(\mathbf{Az} + \mathbf{C}\)</span></a></li>
+  <li><a href="#expected-value-of-mathbfaxamathsft" id="toc-expected-value-of-mathbfaxamathsft" class="nav-link" data-scroll-target="#expected-value-of-mathbfaxamathsft">Expected value of <span class="math inline">\(\mathbf{AXA}\mathsf{^T}\)</span></a></li>
+  </ul></li>
+  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">Variance</a>
+  <ul class="collapse">
+  <li><a href="#variance-of-random-variable-x" id="toc-variance-of-random-variable-x" class="nav-link" data-scroll-target="#variance-of-random-variable-x">Variance of random variable <span class="math inline">\(X\)</span></a></li>
+  <li><a href="#variance-of-vector-mathbfz" id="toc-variance-of-vector-mathbfz" class="nav-link" data-scroll-target="#variance-of-vector-mathbfz">Variance of vector <span class="math inline">\(\mathbf{z}\)</span></a></li>
+  <li><a href="#variance-of-mathbfaz" id="toc-variance-of-mathbfaz" class="nav-link" data-scroll-target="#variance-of-mathbfaz">Variance of <span class="math inline">\(\mathbf{Az}\)</span></a></li>
+  </ul></li>
+  <li><a href="#probability-distributions" id="toc-probability-distributions" class="nav-link" data-scroll-target="#probability-distributions">Probability distributions</a>
+  <ul class="collapse">
+  <li><a href="#multivariate-normal-distribution" id="toc-multivariate-normal-distribution" class="nav-link" data-scroll-target="#multivariate-normal-distribution">Multivariate normal distribution</a></li>
+  <li><a href="#linear-transformation-of-normal-random-variable" id="toc-linear-transformation-of-normal-random-variable" class="nav-link" data-scroll-target="#linear-transformation-of-normal-random-variable">Linear transformation of normal random variable</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/sta221-sp26/website/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -344,7 +388,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Course support</h1>
+<h1 class="title">Math rules</h1>
 </div>
 
 
@@ -361,51 +405,148 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We expect everyone will have questions at some point in the semester, so we want to make sure you can identify when that is and feel comfortable seeking help.</p>
-<section id="lectures-and-labs" class="level2">
-<h2 class="anchored" data-anchor-id="lectures-and-labs">Lectures and labs</h2>
-<p>If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.</p>
+<p>This page contains mathematical rules we’ll use in this course that may be beyond what is covered in a linear algebra course.</p>
+<section id="matrix-calculus" class="level2">
+<h2 class="anchored" data-anchor-id="matrix-calculus">Matrix calculus</h2>
+<section id="definition-of-gradient" class="level3">
+<h3 class="anchored" data-anchor-id="definition-of-gradient">Definition of gradient</h3>
+<p>Let <span class="math inline">\(\mathbf{x} = \begin{bmatrix}x_1 \\ x_2 \\ \vdots \\x_k\end{bmatrix}\)</span>be a <span class="math inline">\(k \times 1\)</span> vector and <span class="math inline">\(f(\mathbf{x})\)</span> be a function of <span class="math inline">\(\mathbf{x}\)</span>.</p>
+<p>Then <span class="math inline">\(\nabla_\mathbf{x}f\)</span>, the <strong>gradient</strong> of <span class="math inline">\(f\)</span> with respect to <span class="math inline">\(\mathbf{x}\)</span> is</p>
+<p><span class="math display">\[
+\nabla_\mathbf{x}f = \begin{bmatrix}\frac{\partial f}{\partial x_1} \\ \frac{\partial f}{\partial x_2} \\ \vdots \\ \frac{\partial f}{\partial x_k}\end{bmatrix}
+\]</span></p>
+<hr>
 </section>
-<section id="office-hours" class="level2">
-<h2 class="anchored" data-anchor-id="office-hours">Office hours</h2>
-<p>The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on Canvas to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. I encourage you to take advantage of them!</p>
-<p>Make a pledge to stop by office hours at least once during the first three weeks of class. If you truly have no questions to ask, just stop by and say hi and introduce yourself. You can find a list of the teaching team’s office hours on Canvas.</p>
+<section id="gradient-of-mathbfxmathsftmathbfz" class="level3">
+<h3 class="anchored" data-anchor-id="gradient-of-mathbfxmathsftmathbfz">Gradient of <span class="math inline">\(\mathbf{x}^\mathsf{T}\mathbf{z}\)</span></h3>
+<p>Let <span class="math inline">\(\mathbf{x}\)</span> be a <span class="math inline">\(k \times 1\)</span> vector and <span class="math inline">\(\mathbf{z}\)</span> be a <span class="math inline">\(k \times 1\)</span> vector, such that <span class="math inline">\(\mathbf{z}\)</span> is not a function of <span class="math inline">\(\mathbf{x}\)</span> .</p>
+<p>The gradient of <span class="math inline">\(\mathbf{x}^\mathsf{T}\mathbf{z}\)</span> with respect to <span class="math inline">\(\mathbf{x}\)</span> is</p>
+<p><span class="math display">\[
+\nabla_\mathbf{x} \hspace{1mm} \mathbf{x}^\mathsf{T}\mathbf{z} = \mathbf{z}
+\]</span></p>
+<hr>
 </section>
-<section id="ed-discussion" class="level2">
-<h2 class="anchored" data-anchor-id="ed-discussion">Ed Discussion</h2>
-<p>Outside of class and office hours, any general questions about course content or assignments should be posted on Ed Discussion. There is a chance another student has already asked a similar question, so please check the other posts on Ed Discussion before adding a new question. If you know the answer to a question that is posted, I encourage you to respond!</p>
+<section id="gradient-of-mathbfxmathsftmathbfamathbfx" class="level3">
+<h3 class="anchored" data-anchor-id="gradient-of-mathbfxmathsftmathbfamathbfx">Gradient of <span class="math inline">\(\mathbf{x}^\mathsf{T}\mathbf{A}\mathbf{x}\)</span></h3>
+<p>Let <span class="math inline">\(\mathbf{x}\)</span> be a <span class="math inline">\(k \times 1\)</span> vector and <span class="math inline">\(\mathbf{A}\)</span> be a <span class="math inline">\(k \times k\)</span> matrix, such that <span class="math inline">\(\mathbf{A}\)</span> is not a function of <span class="math inline">\(\mathbf{x}\)</span> .</p>
+<p>Then the gradient of <span class="math inline">\(\mathbf{x}^\mathsf{T}\mathbf{A}\mathbf{x}\)</span> with respect to <span class="math inline">\(\mathbf{x}\)</span> is</p>
+<p><span class="math display">\[
+\nabla_\mathbf{x} \hspace{1mm} \mathbf{x}^\mathsf{T}\mathbf{A}\mathbf{x} = (\mathbf{A}\mathbf{x} + \mathbf{A}^\mathsf{T} \mathbf{x}) = (\mathbf{A} + \mathbf{A}^\mathsf{T})\mathbf{x}
+\]</span></p>
+<p>If <span class="math inline">\(\mathbf{A}\)</span> is symmetric, then</p>
+<p><span class="math display">\[
+(\mathbf{A} + \mathbf{A}^\mathsf{T})\mathbf{x} = 2\mathbf{A}\mathbf{x}
+\]</span></p>
+<hr>
 </section>
-<section id="email" class="level2">
-<h2 class="anchored" data-anchor-id="email">Email</h2>
-<p>If you have questions about personal matters that are not appropriate for the class discussion forum (e.g.&nbsp;illness, accommodations, etc.), you may me at <a href="mailto:maria.tackett@duke.edu">maria.tackett@duke.edu</a>. <strong>If you email me, please include “STA 221” in the subject line.</strong> Barring extenuating circumstances, I will respond to STA 221 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.</p>
+<section id="hessian-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="hessian-matrix">Hessian matrix</h3>
+<p>The <strong>Hessian</strong> matrix, <span class="math inline">\(\nabla_\mathbf{x}^2f\)</span> is a <span class="math inline">\(k \times k\)</span> matrix of partial second derivatives</p>
+<p><span class="math display">\[
+\nabla_{\mathbf{x}}^2f = \begin{bmatrix} \frac{\partial^2f}{\partial x_1^2} &amp; \frac{\partial^2f}{\partial x_1 \partial x_2} &amp; \dots &amp; \frac{\partial^2f}{\partial x_1\partial x_k} \\
+\frac{\partial^2f}{\partial\ x_2 \partial x_1} &amp; \frac{\partial^2f}{\partial x_2^2} &amp; \dots &amp; \frac{\partial^2f}{\partial x_2 \partial x_k} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+\frac{\partial^2f}{\partial x_k\partial x_1} &amp; \frac{\partial^2f}{\partial x_k\partial x_2} &amp; \dots &amp; \frac{\partial^2f}{\partial x_k^2} \end{bmatrix}
+\]</span></p>
 </section>
-<section id="academic-support" class="level2">
-<h2 class="anchored" data-anchor-id="academic-support">Academic support</h2>
-<p>There are times may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Academic Resource Center. The <a href="https://arc.duke.edu">Academic Resource Center (ARC)</a> offers free services to all students during their undergraduate careers at Duke. Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more. Because learning is a process unique to every individual, they work with each student to discover and develop their own academic strategy for success at Duke. Contact the ARC to schedule an appointment. Undergraduates in any year, studying any discipline can benefit! Contact <a href="mailto:arc@duke.edu" title="email">ARC@duke.edu</a>, 919-684-5917.</p>
 </section>
-<section id="mental-health-and-wellness" class="level2">
-<h2 class="anchored" data-anchor-id="mental-health-and-wellness">Mental health and wellness</h2>
-<ul>
-<li><p><strong>DukeReach</strong>: Provides comprehensive outreach services to identify and support students in managing all aspects of well being. If you have concerns about a student’s behavior or health visit the website for resources and assistance. Go to <a href="http://studentaffairs.duke.edu/dukereach">studentaffairs.duke.edu/dukereach</a></p></li>
-<li><p><strong>Counseling and Psychological Services (CAPS)</strong>: CAPS services include individual, group, and couples counseling services, health coaching, psychiatric services, and workshops and discussions. (919) 660-1000 or <a href="https://students.duke.edu/wellness/caps/">students.duke.edu/wellness/caps</a></p></li>
-<li><p><strong>TimelyCare (formerly known as Blue Devils Care):</strong> An online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling. <a href="https://bluedevilscare.duke.edu">bluedevilscare.duke.edu</a></p></li>
-</ul>
+<section id="expected-value" class="level2">
+<h2 class="anchored" data-anchor-id="expected-value">Expected value</h2>
+<section id="expected-value-of-random-variable-x" class="level3">
+<h3 class="anchored" data-anchor-id="expected-value-of-random-variable-x">Expected value of random variable <span class="math inline">\(X\)</span></h3>
+<p>The <strong>expected value</strong> of a random variable <span class="math inline">\(\mathbf{X}\)</span> is a weighted average, i.e., the mean value of the possible values a random variable can take weighted by the probability of the outcomes.</p>
+<p>Let <span class="math inline">\(f_X(x)\)</span> be the probability distribution of <span class="math inline">\(X\)</span>. If <span class="math inline">\(X\)</span> is continuous then</p>
+<p><span class="math display">\[
+E(X) = \int_{-\infty}^{\infty}xf_X(x)dx
+\]</span></p>
+<p>If <span class="math inline">\(X\)</span> is discrete then</p>
+<p><span class="math display">\[
+E(X) = \sum_{x \in X}xf_X(x) = \sum_{x\in X}xP(X = x)
+\]</span></p>
+<hr>
 </section>
-<section id="technology-accommodations" class="level2">
-<h2 class="anchored" data-anchor-id="technology-accommodations">Technology accommodations</h2>
-<p>Highly aided students who have limited access to computers may request loaner laptops through the <a href="https://dukelife.duke.edu/technology-assistance-program/">DukeLIFE Technology Assistance Program</a>. Please note that supplies are limited.</p>
-<p>Note that we will be using Duke’s computational resources in this course. These resources are freely available to you. As long as your computer can connect to the internet and open a browser window, you can perform the necessary computing for this course. All software we use is open-source and/or freely available.</p>
+<section id="expected-value-of-vector-mathbfz" class="level3">
+<h3 class="anchored" data-anchor-id="expected-value-of-vector-mathbfz">Expected value of vector <span class="math inline">\(\mathbf{z}\)</span></h3>
+<p>Let <span class="math inline">\(\mathbf{z} = \begin{bmatrix}z_1 \\ \vdots \\z_p\end{bmatrix}\)</span> be a <span class="math inline">\(p \times 1\)</span> vector of random variables.</p>
+<p><br></p>
+<p>Then <span class="math inline">\(E(\mathbf{z}) = E\begin{bmatrix}z_1 \\ \vdots \\ z_p\end{bmatrix} = \begin{bmatrix}E(z_1) \\ \vdots \\ E(z_p)\end{bmatrix}\)</span></p>
+<hr>
 </section>
-<section id="course-materials-costs" class="level2">
-<h2 class="anchored" data-anchor-id="course-materials-costs">Course materials costs</h2>
-<p>There are no costs associated with this course. All readings will come from freely available, open resources (open-source textbooks, journal articles, etc.).</p>
+<section id="expected-value-of-vector-mathbfaz" class="level3" data-background-color="#ccddeb">
+<h3 data-background-color="#ccddeb" class="anchored" data-anchor-id="expected-value-of-vector-mathbfaz">Expected value of vector <span class="math inline">\(\mathbf{Az}\)</span></h3>
+<p>Let <span class="math inline">\(\mathbf{A}\)</span> be an <span class="math inline">\(n \times p\)</span> matrix of constants and <span class="math inline">\(\mathbf{z}\)</span> a <span class="math inline">\(p \times 1\)</span> vector of random variables. Then</p>
+<p><span class="math display">\[
+E(\mathbf{Az}) = \mathbf{A}E(\mathbf{z})
+\]</span></p>
+<hr>
 </section>
-<section id="assistance-with-zoom-or-canvas" class="level2">
-<h2 class="anchored" data-anchor-id="assistance-with-zoom-or-canvas">Assistance with Zoom or Canvas</h2>
-<p>For technical help with Canvas or Zoom, contact the Duke OIT Service Desk at <a href="https://oit.duke.edu/help">oit.duke.edu/help</a>. You can also access the self-service help documentation for Zoom <a href="https://oit.duke.edu/help/articles/kb0029318">here</a> and for Canvas <a href="https://go.canvas.duke.edu/students-0/">here</a>.</p>
-<p>Zoom will be used for online office hours as well as as a backup option should we need to hold the course online instead of in person.</p>
+<section id="expected-value-of-mathbfaz-mathbfc" class="level3">
+<h3 class="anchored" data-anchor-id="expected-value-of-mathbfaz-mathbfc">Expected value of <span class="math inline">\(\mathbf{Az} + \mathbf{C}\)</span></h3>
+<p>Let <span class="math inline">\(\mathbf{A}\)</span> be an <span class="math inline">\(n \times p\)</span> matrix of constants, <span class="math inline">\(\mathbf{C}\)</span> a <span class="math inline">\(n \times 1\)</span> vector of constants, and <span class="math inline">\(\mathbf{z}\)</span> a <span class="math inline">\(p \times 1\)</span> vector of random variables. Then</p>
+<p><span class="math display">\[
+E(\mathbf{Az} + \mathbf{C}) = E(\mathbf{Az}) + E(\mathbf{C}) = \mathbf{A}E(\mathbf{z}) + \mathbf{C}
+\]</span></p>
+</section>
+<section id="expected-value-of-mathbfaxamathsft" class="level3">
+<h3 class="anchored" data-anchor-id="expected-value-of-mathbfaxamathsft">Expected value of <span class="math inline">\(\mathbf{AXA}\mathsf{^T}\)</span></h3>
+<p>Let <span class="math inline">\(\mathbf{A}\)</span> be an <span class="math inline">\(n\times p\)</span> matrix of constants and <span class="math inline">\(\mathbf{X}\)</span> a <span class="math inline">\(p \times p\)</span> matrix. Then</p>
+<p><span class="math display">\[
+E(\mathbf{AXA}^\mathsf{T}) = \mathbf{A}E(\mathbf{X})\mathbf{A}^\mathsf{T}
+\]</span></p>
+</section>
+</section>
+<section id="variance" class="level2">
+<h2 class="anchored" data-anchor-id="variance">Variance</h2>
+<section id="variance-of-random-variable-x" class="level3">
+<h3 class="anchored" data-anchor-id="variance-of-random-variable-x">Variance of random variable <span class="math inline">\(X\)</span></h3>
+<p>The <strong>variance</strong> of a random variable <span class="math inline">\(X\)</span> is a measure of the spread of a distribution about its mean.</p>
+<p><span class="math display">\[
+Var(X) = E[(X - E(X))^2] = E(X^2) - E(X)^2
+\]</span></p>
+<hr>
+</section>
+<section id="variance-of-vector-mathbfz" class="level3">
+<h3 class="anchored" data-anchor-id="variance-of-vector-mathbfz">Variance of vector <span class="math inline">\(\mathbf{z}\)</span></h3>
+<p>Let <span class="math inline">\(\mathbf{z} = \begin{bmatrix}z_1 \\ \vdots \\z_p\end{bmatrix}\)</span> be a <span class="math inline">\(p \times 1\)</span> vector of random variables. Then</p>
+<p><span class="math display">\[
+Var(\mathbf{z}) = E[(\mathbf{z} - E(\mathbf{z}))(\mathbf{z} - E(\mathbf{z}))^\mathsf{T}]
+\]</span></p>
+<p><br></p>
+<p>This produced the variance-covariance matrix</p>
+<p><span class="math inline">\(Var(\mathbf{z}) = \begin{bmatrix}Var(z_1) &amp; Cov(z_1, z_2) &amp; \dots &amp; Cov(z_1, z_p)\\ Cov(z_2, z_1) &amp; Var(z_2) &amp; \dots &amp; Cov(z_2, z_p) \\ \vdots &amp; \vdots &amp; \dots &amp; \cdot \\ Cov(z_p, z_1) &amp; Cov(z_p, z_2) &amp; \dots &amp; Var(z_p)\end{bmatrix}\)</span></p>
+<hr>
+</section>
+<section id="variance-of-mathbfaz" class="level3">
+<h3 class="anchored" data-anchor-id="variance-of-mathbfaz">Variance of <span class="math inline">\(\mathbf{Az}\)</span></h3>
+<p>Let <span class="math inline">\(\mathbf{A}\)</span> be an <span class="math inline">\(n \times p\)</span> matrix of constants and <span class="math inline">\(\mathbf{z}\)</span> a <span class="math inline">\(p \times 1\)</span> vector of random variables. Then</p>
+<p><span class="math display">\[
+\begin{aligned}
+Var(\mathbf{Az}) &amp;= E[(\mathbf{Az} - E(\mathbf{Az}))(\mathbf{Az} - E(\mathbf{Az}))^\mathsf{T}] \\
+&amp; = \mathbf{A}Var(\mathbf{z})\mathbf{A}^\mathsf{T}
+\end{aligned}
+\]</span></p>
+</section>
+</section>
+<section id="probability-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="probability-distributions">Probability distributions</h2>
+<section id="multivariate-normal-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="multivariate-normal-distribution">Multivariate normal distribution</h3>
+<p>Let <span class="math inline">\(\mathbf{z}\)</span> be a <span class="math inline">\(p \times 1\)</span> vector of random variables, such that <span class="math inline">\(\mathbf{z}\)</span> follows a multivariate normal distribution with mean <span class="math inline">\(\boldsymbol{\mu}\)</span> and variance <span class="math inline">\(\boldsymbol{\Sigma}\)</span>. Then the probability density function of <span class="math inline">\(\mathbf{z}\)</span> is</p>
+<p><span class="math display">\[f(\mathbf{z}) = \frac{1}{(2\pi)^{p/2}|\boldsymbol{\Sigma}|^{1/2}}\exp\Big\{-\frac{1}{2}(\mathbf{z} - \boldsymbol{\mu})^\mathsf{T}\boldsymbol{\Sigma}^{-1}(\mathbf{z}- \boldsymbol{\mu})\Big\}\]</span></p>
+<!-- Let $X$ be a random variable, such that $X \sim N(\mu, \sigma^2)$. Then the probability function is -->
+<!-- $$ -->
+<!-- P(X = x | \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\Big\{-{\frac{1}{2\sigma^2}(x - \mu)^2}\Big\} -->
+<!-- $$ -->
+</section>
+<section id="linear-transformation-of-normal-random-variable" class="level3" data-background-color="#ccddeb">
+<h3 data-background-color="#ccddeb" class="anchored" data-anchor-id="linear-transformation-of-normal-random-variable">Linear transformation of normal random variable</h3>
+<p>Suppose <span class="math inline">\(\mathbf{z}\)</span> is a multivariate normal random variable with mean <span class="math inline">\(\boldsymbol{\mu}\)</span> and variance <span class="math inline">\(\boldsymbol{\Sigma}\)</span>. A linear transformation of <span class="math inline">\(\mathbf{z}\)</span> is also multivariate normal, such that</p>
+<p><span class="math display">\[
+\mathbf{A}\mathbf{z} + \mathbf{B} \sim N(\mathbf{A}\boldsymbol{\mu} + \mathbf{B}, \mathbf{A}\boldsymbol{\Sigma}\mathbf{A}^\mathsf{T})
+\]</span></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -809,18 +950,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./syllabus.html" class="pagination-link" aria-label="Syllabus">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Syllabus</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./index.html" class="pagination-link" aria-label="Schedule">
-        <span class="nav-page-text">Schedule</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
