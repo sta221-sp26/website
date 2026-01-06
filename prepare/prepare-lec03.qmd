@@ -1,0 +1,17 @@
+---
+title: "Prepare for Lecture 03: Model evaluation"
+---
+
+<br>
+
+**Required**
+
+📖 Read [Section 4.7](https://introregression.netlify.app/04-slr#sec-model-assessment)
+
+<br>
+
+**Optional computing introduction/ review**
+
+🎥 Watch [Meet the Toolkit: R + RStudio](https://warpwire.duke.edu/w/7WsIAA/)
+
+🎥 Watch [Meet the Toolkit: Quarto](https://warpwire.duke.edu/w/62sIAA/)
