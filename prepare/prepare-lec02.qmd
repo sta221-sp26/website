@@ -7,9 +7,9 @@ subtitle: "Simple linear regression"
 
 **Required**
 
-📖 Read [Chapter 1](https://introregression.netlify.app/01-intro)
+📖 Read [Chapter 1](https://intro-regression.github.io/01-intro)
 
-📖 Read Section [4.1 - 4.6](https://introregression.netlify.app/04-slr)
+📖 Read Section [4.1 - 4.6](https://intro-regression.github.io/04-slr)
 
 <br>
 

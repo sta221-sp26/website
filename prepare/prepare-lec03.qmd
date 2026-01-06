@@ -6,7 +6,7 @@ title: "Prepare for Lecture 03: Model evaluation"
 
 **Required**
 
-📖 Read [Section 4.7](https://introregression.netlify.app/04-slr#sec-model-assessment)
+📖 Read [Section 4.7](https://intro-regression.github.io/04-slr#sec-model-assessment)
 
 <br>
 
