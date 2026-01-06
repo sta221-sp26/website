@@ -793,7 +793,7 @@
     "href": "syllabus.html#course-materials",
     "title": "STA 221 Syllabus",
     "section": "Course materials",
-    "text": "Course materials\nMost of the reading is in this course will come from Introduction to Regression Analysis: A Data Science Approach. It is freely available online [x]. Readings from this text and other sources will be posted under the “prepare” column on the course schedule. We will use the statistical software R. Students will be able to access R through Docker containers provided by Duke Office of Information Technology. See the computing page for more information.",
+    "text": "Course materials\nMost of the reading is in this course will come from Introduction to Regression Analysis: A Data Science Approach. It is freely available online (introregression.netlify.app). Readings from this text and other sources will be posted under the “prepare” column on the course schedule. We will use the statistical software R. Students will be able to access R through Docker containers provided by Duke Office of Information Technology. See the computing page for more information.",
     "crumbs": [
       "Syllabus"
     ]
