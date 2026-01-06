@@ -48,7 +48,7 @@ By the end of the semester, you will be able to...
 
 ## Course materials
 
-Most of the reading is in this course will come from *Introduction to Regression Analysis: A Data Science Approach*. It is freely available online ([introregression.netlify.app](https://introregression.netlify.app)). Readings from this text and other sources will be posted under the "prepare" column on the course schedule. We will use the statistical software R. Students will be able to access R through Docker containers provided by Duke Office of Information Technology. See the [computing page](computing-access.qmd) for more information.
+Most readings in this course will come from *Introduction to Regression Analysis: A Data Science Approach*. It is freely available online ([introregression.netlify.app](https://introregression.netlify.app/)). Readings from this text and other sources will be posted under the "prepare" column on the course schedule. We will use the statistical software R. Students will be able to access R through Docker containers provided by Duke Office of Information Technology. See the [computing page](computing-access.qmd) for more information.
 
 ## Course community
 
@@ -91,7 +91,7 @@ The TAs and I will provide materials, answer questions, and provide guidance to 
 
 3.  Ask questions frequently during lecture, in office hours, on Ed Discussion, and among your classmates.
 
-4.  Complete all homework and lab and ask your self "why" questions ask you go through the steps to complete each exercise.
+4.  Complete all homework and labs, asking yourself “why” questions as you go through the steps to complete each exercise.
 
 5.  Stay current with the course material, as each new concept builds on previous ones.
 

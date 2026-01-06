@@ -1,0 +1,933 @@
+[
+  {
+    "objectID": "exam-02-practice.html",
+    "href": "exam-02-practice.html",
+    "title": "Exam 02 practice",
+    "section": "",
+    "text": "Important\n\n\n\nThis page contains practice problems to help prepare for Exam 02. This set of practice problems is not comprehensive. You should review these study tips as you prepare for the exam.\n\nThere is no answer key for these problems. You may ask questions in office hours and on Ed Discussion."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-1",
+    "href": "exam-02-practice.html#exercise-1",
+    "title": "Exam 02 practice",
+    "section": "Exercise 1",
+    "text": "Exercise 1\nGiven the simple linear regression model\n\\[y_i = \\beta_0 + \\beta_1x_i + \\epsilon_i, \\hspace{10mm} \\epsilon_i \\sim N(0, \\sigma^2_{\\epsilon})\\]\nWrite the likelihood function and use it to show that the maximum likelihood estimators (MLEs) of \\(\\beta_0\\), \\(\\beta_1\\), and \\(\\sigma^2_{\\epsilon}\\) are of the form shown on this slide \\((\\tilde{\\beta}_0)\\) and this slide \\((\\tilde{\\beta}_1, \\tilde{\\sigma}^2_{\\epsilon})\\) ."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-2",
+    "href": "exam-02-practice.html#exercise-2",
+    "title": "Exam 02 practice",
+    "section": "Exercise 2",
+    "text": "Exercise 2\nGiven the linear regression model\n\\[\n\\mathbf{y}  = \\mathbf{X}\\boldsymbol{\\beta} + \\boldsymbol{\\epsilon} \\hspace{10mm} \\boldsymbol{\\epsilon} \\sim N(\\mathbf{0}, \\sigma^2_{\\epsilon}\\mathbf{I})\n\\]\nWrite the likelihood function and use it to show that the maximum likelihood estimators (MLEs) of \\(\\boldsymbol{\\beta}\\) and \\(\\sigma^2_{\\epsilon}\\) are\n\\[\n\\tilde{\\boldsymbol{\\beta}} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y} \\hspace{10mm} \\tilde{\\sigma}^2_{\\epsilon} = \\frac{1}{n}(\\mathbf{y} - \\mathbf{X}\\tilde{\\boldsymbol{\\beta}})^T(\\mathbf{y} - \\mathbf{X}\\tilde{\\boldsymbol{\\beta}})\n\\]"
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-3",
+    "href": "exam-02-practice.html#exercise-3",
+    "title": "Exam 02 practice",
+    "section": "Exercise 3",
+    "text": "Exercise 3\nGiven the logistic regression model\n\\[\n\\log\\Big(\\frac{\\pi}{1-\\pi}\\Big) = \\mathbf{X}\\boldsymbol{\\beta}\n\\]\n\nWrite the likelihood function\nRework the derivation from the March 27 lecture to show the derivative solved to find the MLEs is of the form on this slide. (You can check your answer using the board work posted in Canvas)."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-4",
+    "href": "exam-02-practice.html#exercise-4",
+    "title": "Exam 02 practice",
+    "section": "Exercise 4",
+    "text": "Exercise 4\nSuppose \\(Y_1, \\ldots, Y_n\\) are an independent and identically distributed (iid) sample from some distribution\n\\[f_Y(y) = \\theta(1 - \\theta)^{y-1}\\]\nsuch that \\(y\\) takes on positive integer values and \\(0 &lt; \\theta &lt; 1\\). Show that the MLE for \\(\\theta^{-1}\\) is \\(\\frac{1}{n}\\sum_{i=1}^n y_i\\) ."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-5",
+    "href": "exam-02-practice.html#exercise-5",
+    "title": "Exam 02 practice",
+    "section": "Exercise 5",
+    "text": "Exercise 5\nRework Exercises 1 - 2 in HW 04."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-6",
+    "href": "exam-02-practice.html#exercise-6",
+    "title": "Exam 02 practice",
+    "section": "Exercise 6",
+    "text": "Exercise 6\nSuppose we fit a linear model with a log transformation on the response variable, i.e.,\n\\[\n\\widehat{\\log(y_i)} = \\hat{\\beta}_0 + \\hat{\\beta}_1x_1 + \\dots + \\hat{\\beta}_p x_p\n\\]\n\nShow mathematically why the slope for \\(x_j\\) and intercept are interpreted in terms of \\(y\\) as shown on this slide.\nShow how \\(y\\) is expected to change if \\(x_j\\) increases by \\(t\\) units."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-7",
+    "href": "exam-02-practice.html#exercise-7",
+    "title": "Exam 02 practice",
+    "section": "Exercise 7",
+    "text": "Exercise 7\nSuppose we fit a linear model with a log transformation on one predictor variable, i.e.,\n\\[\\hat{y}_i = \\hat{\\beta}_0 + \\hat{\\beta}_1\\log (x_1) + \\dots + \\hat{\\beta}_p x_p\n\\]\nShow mathematically why the slope and intercept are interpreted as shown on this slide when \\(x\\) is multiplied by a factor \\(C\\)."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-8",
+    "href": "exam-02-practice.html#exercise-8",
+    "title": "Exam 02 practice",
+    "section": "Exercise 8",
+    "text": "Exercise 8\nRework Exercise 1 in HW 03."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-9",
+    "href": "exam-02-practice.html#exercise-9",
+    "title": "Exam 02 practice",
+    "section": "Exercise 9",
+    "text": "Exercise 9\nRecall that for the linear regression, the variance of the estimated coefficients are the diagonal elements of \\(Var(\\hat{\\boldsymbol{\\beta}}) = \\hat{\\sigma}^2_{\\epsilon}(\\mathbf{X}^T\\mathbf{X})^{-1}\\). One of the impacts of multicollinearity is that the model coefficients will have large variances. Explain why."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-10",
+    "href": "exam-02-practice.html#exercise-10",
+    "title": "Exam 02 practice",
+    "section": "Exercise 10",
+    "text": "Exercise 10\nSuppose you fit a simple linear regression model.\n\nDraw a scatterplot that contains an observation with large leverage but low Cook’s distance.\nDraw a scatterplot that contains an observation with large leverage and high Cook’s distance.\nDraw a scatterplot that contains an observation with a large studentized residual."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-11",
+    "href": "exam-02-practice.html#exercise-11",
+    "title": "Exam 02 practice",
+    "section": "Exercise 11",
+    "text": "Exercise 11\n\nWhat is an advantage of examining a plot of studentized residuals vs. fitted values rather than using the raw residuals?\nExplain what is measured by Cook’s distance. You don’t need to memorize the formula but rather describe what the formula is quantifying for each observation. Click here for the formula (slide also contains the solution)."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-12",
+    "href": "exam-02-practice.html#exercise-12",
+    "title": "Exam 02 practice",
+    "section": "Exercise 12",
+    "text": "Exercise 12\nWrite the hypotheses being tested in the drop-in-deviance test output on this slide. Explain how each value in the table is computed."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-13",
+    "href": "exam-02-practice.html#exercise-13",
+    "title": "Exam 02 practice",
+    "section": "Exercise 13",
+    "text": "Exercise 13\n\nWhat is an advantage of using a drop-in-deviance test instead of AIC (or BIC) to compare regression models?\nWhat is an advantage of using AIC (or BIC) instead of a drop-in-deviance test to compare regression models?"
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-141",
+    "href": "exam-02-practice.html#exercise-141",
+    "title": "Exam 02 practice",
+    "section": "Exercise 141",
+    "text": "Exercise 141\n\nOn average, what fraction of people with an odds of 0.37 of defaulting on their credit card payment will in fact default?\nSuppose an individual has a 16% chance of defaulting on their credit card payment. What are the odds they will default?"
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-15",
+    "href": "exam-02-practice.html#exercise-15",
+    "title": "Exam 02 practice",
+    "section": "Exercise 15",
+    "text": "Exercise 15\nRecall the model using age and education to predict odds of being high risk for heart disease.\n\nShow mathematically why the interpretation for the slope for age in terms of the log-odds is in the form shown on this slide.\nShow mathematically why the interpretation for the slope of age in terms of the odds is in the form shown on this slide."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-16",
+    "href": "exam-02-practice.html#exercise-16",
+    "title": "Exam 02 practice",
+    "section": "Exercise 16",
+    "text": "Exercise 16\nRecall the model using age and education to predict odds of being high risk for heart disease.\n\nShow mathematically why the interpretation for the slope for education4 in terms of the log-odds is in the form shown on this slide.\nShow mathematically why the interpretation for the slope of education4in terms of the odds is in the form shown on this slide."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-17",
+    "href": "exam-02-practice.html#exercise-17",
+    "title": "Exam 02 practice",
+    "section": "Exercise 17",
+    "text": "Exercise 17\nExplain why the slope of the logistic regression model is called the Adjusted Odds Ratio (or just Odds Ratio if there is one predictor)."
+  },
+  {
+    "objectID": "exam-02-practice.html#exercise-18",
+    "href": "exam-02-practice.html#exercise-18",
+    "title": "Exam 02 practice",
+    "section": "Exercise 18",
+    "text": "Exercise 18\n\nDraw an example of an ROC curve such that the AUC is about 0.55\nDraw an example of an ROC curve such that the AUC is about 0.9.\nExplain what each point on an ROC curve represents."
+  },
+  {
+    "objectID": "exam-02-practice.html#footnotes",
+    "href": "exam-02-practice.html#footnotes",
+    "title": "Exam 02 practice",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFrom Introduction to Statistical Learning.↩︎"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Final project",
+    "section": "",
+    "text": "Research topics due Tuesday February 10\nProject proposal due Tuesday, February 24\nExploratory data analysis due Thursday, March 19\nPresentation + Presentation comments Friday, March 27 (in lab)\nAnalysis draft + peer review Friday, April 10 (peer review in lab)\nWritten report due Tuesday, April 21\nReproducibility + organization due Tuesday, April 21\n\nMore details posted when the project is assigned.",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "project.html#project-milestones",
+    "href": "project.html#project-milestones",
+    "title": "Final project",
+    "section": "",
+    "text": "Research topics due Tuesday February 10\nProject proposal due Tuesday, February 24\nExploratory data analysis due Thursday, March 19\nPresentation + Presentation comments Friday, March 27 (in lab)\nAnalysis draft + peer review Friday, April 10 (peer review in lab)\nWritten report due Tuesday, April 21\nReproducibility + organization due Tuesday, April 21\n\nMore details posted when the project is assigned.",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "project-tips.html",
+    "href": "project-tips.html",
+    "title": "Final project tips + resources",
+    "section": "",
+    "text": "Data sources\n\nSome resources that may be helpful as you find data:\n\nFiveThirtyEight data\nTidyTuesday\nData Is Plural\nR Data Sources for Regression Analysis\n\n\n\nOther data repositories\n\nWorld Health Organization\nThe National Bureau of Economic Research\nInternational Monetary Fund\nGeneral Social Survey\nUnited Nations Data\nUnited Nations Statistics Division\nU.K. Data\nU.S. Data\nU.S. Census Data\nEuropean Statistics\nStatistics Canada\nPew Research\nUNICEF\nCDC\nWorld Bank\nElection Studies\n\n\n\n\nTips\n\nAsk questions if any of the expectations are unclear.\nCode: In your write up your code should be hidden (echo = FALSE) so that your document is neat and easy to read. However your document should include all your code such that if I re-knit your Qmd file I should be able to obtain the results you presented.\n\nException: If you want to highlight something specific about a piece of code, you’re welcome to show that portion.\n\nMerge conflicts will happen, issues will arise, and that’s fine! Commit and push often, and ask questions when stuck.\nMake sure each team member is contributing, both in terms of quality and quantity of contribution (we will be reviewing commits from different team members).\nAll team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different backgrounds and abilities, it is the responsibility of every team member to understand how and why all code and approaches in the assignment works.\n\n\n\nFormatting + communication tips\n\nSuppress Code, Warnings, & Messages\n\nInclude the following code in a code chunk at the top of your .qmd file to suppress all code, warnings, and other messages. Use the code chunk header {r set-up, include = FALSE} to suppress this set up code.\n\nknitr::opts_chunk$set(echo = FALSE,\n                      warning = FALSE, \n                      message = FALSE)\n\nAn alternative approach is to add the following code to the YAML:\n\nexecute:\n  echo: false\n  warning: false\n  message: false\n\n\n\n\nHeaders\n\nUse headers to clearly label each section. Make sure there is a space between the last # and the title, so the header renders correctly. For example, ###Section Title will not render as header, but ### Section Title will.\n\n\n\nReferences\n\nInclude all references in a section called “References” at the end of the report.\nThis course does not have specific requirements for formatting citations and references.\n\n\n\nAppendix\n\nIf you have additional work that does not fit or does not belong in the body of the report, you may put it at the end of the document in section called “Appendix”.\nThe items in the appendix should be properly labeled.\nThe appendix should only be for additional material. The reader should be able to fully understand your report without viewing content in the appendix.\n\n\n\nResize figures\n\nResize plots and figures, so you have more space for the narrative.\n\nResize individual figures: Use the code chunk header {r plot1, fig.height = 3, fig.width = 5}, replacing plot1 with a meaningful label and the height and width with values appropriate for your write up.\nResize all figures: Include the fig_width and fig_height options in your YAML header as shown below:\n\n\n\n---\ntitle: \"Your title\"\nauthor: \"Your names\"\nformat:\n  pdf:\n    fig-width: 7\n    fig-height: 5\n---\nReplace the height and width values with values appropriate for your write up.\n\n\nArranging plots\nArrange plots in a grid, instead of one after the other. This is especially useful when displaying plots for exploratory data analysis and to check assumptions.\n\nIf you’re using ggplot2 functions, the patchwork package makes it easy to arrange plots in a grid. See the documentation and examples here.\nIf you’re using base R function, i.e. when using the emplogit functions, put the code par(mfrow = c(rows,columns)) before the code to make the plots. For example, par(mfrow = c(2,3)) will arrange plots in a grid with 2 rows and 3 columns.\n\n\n\nPlot titles and axis labels\nBe sure all plot titles and axis labels are visible and easy to read.\n\nUse informative titles, not variable names, for titles and axis labels.\nUse coord_flip() to flip the x and y axes on the plot. This is useful if you a bar plot with an x-axis that is difficult to read due to overlapping text.\n\n❌ NO! The x-axis is hard to read because the names overlap.\n\nggplot(data = mpg, aes(x = manufacturer)) +\n  geom_bar()\n\n\n\n\n\n\n\n\n✅ YES! Names are readable\n\nggplot(data = mpg, aes(x = manufacturer)) +\n  geom_bar() +\n  coord_flip()\n\n\n\n\n\n\n\n\n\n\nDo a little more to make the plot look professional!\n\nInformative title and axis labels\nFlipped coordinates to make names readable\nArranged bars based on count\nCapitalized manufacturer names\nOptional: Added color - Use a coordinated color scheme throughout paper / presentation\nOptional: Applied a theme - Use same theme throughout paper / presentation\n\n\nmpg |&gt;\n  count(manufacturer) |&gt;\n  mutate(manufacturer = str_to_title(manufacturer)) |&gt;\n  ggplot(aes(x = fct_reorder(manufacturer,n), y = n)) +\n  geom_bar(stat = \"identity\", fill = \"steelblue\") +\n  coord_flip() +\n  labs(x = \"Manufacturer\", \n       y = \"Count\", \n       title = \"The most common manufacturer is Dodge\") +\n  theme_bw() \n\n\n\n\n\n\n\n\n\n\nTables and model output\n\nUse the kable function from the knitr package to neatly output all tables and model output. This will also ensure all model coefficients are displayed.\n\nUse the digits argument to display only 3 or 4 significant digits.\nUse the caption argument to add captions to your table.\n\n\n\nmodel &lt;- lm(mpg ~ hp, data = mtcars)\ntidy(model) |&gt;\n  kable(digits = 3)\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n30.099\n1.634\n18.421\n0\n\n\nhp\n-0.068\n0.010\n-6.742\n0\n\n\n\n\n\n\n\nGuidelines for communicating results\n\nDon’t use variable names in your narrative! Use descriptive terms, so the reader understands your narrative without relying on the data dictionary.\n\n❌ There is a negative linear relationship between mpg and hp.\n✅ There is a negative linear relationship between a car’s fuel economy (in miles per gallon) and its horsepower.\n\nKnow your audience: Your report should be written for a general audience who has an understanding of statistics at the level of STA 210.\nAvoid subject matter jargon: Don’t assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term.\nTell the “so what”: Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation.\n\n❌ For every one unit increase in horsepower, we expect the miles per gallon to decrease by 0.068 units, on average.\n✅ If the priority is to have good fuel economy, then one should choose a car with lower horsepower. Based on our model, the fuel economy is expected to decrease, on average, by 0.68 miles per gallon for every 10 additional horsepower.\n\nTell a story: All visualizations, tables, model output, and narrative should tell a cohesive story!\nUse one voice: Though multiple people are writing the report, it should read as if it’s from a single author. At least one team member should read through the report before submission to ensure it reads like a cohesive document.\n\n\n\n\nAdditional resources\n\nExploring RStudio’s Visual Markdown Editor\nR for Data Science\nQuarto documentation:\n\nQuarto PDF Basics\nPresentations in Quarto\n\nData visualization\n\nggplot2 Reference\nggplot2: Elegant Graphics for Data Analysis\nData Visualization: A Practice Introduction\nPatchwork R Package",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "math-rules.html",
+    "href": "math-rules.html",
+    "title": "Math rules",
+    "section": "",
+    "text": "This page contains mathematical rules we’ll use in this course that may be beyond what is covered in a linear algebra course."
+  },
+  {
+    "objectID": "math-rules.html#matrix-calculus",
+    "href": "math-rules.html#matrix-calculus",
+    "title": "Math rules",
+    "section": "Matrix calculus",
+    "text": "Matrix calculus\n\nDefinition of gradient\nLet \\(\\mathbf{x} = \\begin{bmatrix}x_1 \\\\ x_2 \\\\ \\vdots \\\\x_k\\end{bmatrix}\\)be a \\(k \\times 1\\) vector and \\(f(\\mathbf{x})\\) be a function of \\(\\mathbf{x}\\).\nThen \\(\\nabla_\\mathbf{x}f\\), the gradient of \\(f\\) with respect to \\(\\mathbf{x}\\) is\n\\[\n\\nabla_\\mathbf{x}f = \\begin{bmatrix}\\frac{\\partial f}{\\partial x_1} \\\\ \\frac{\\partial f}{\\partial x_2} \\\\ \\vdots \\\\ \\frac{\\partial f}{\\partial x_k}\\end{bmatrix}\n\\]\n\n\n\nGradient of \\(\\mathbf{x}^\\mathsf{T}\\mathbf{z}\\)\nLet \\(\\mathbf{x}\\) be a \\(k \\times 1\\) vector and \\(\\mathbf{z}\\) be a \\(k \\times 1\\) vector, such that \\(\\mathbf{z}\\) is not a function of \\(\\mathbf{x}\\) .\nThe gradient of \\(\\mathbf{x}^\\mathsf{T}\\mathbf{z}\\) with respect to \\(\\mathbf{x}\\) is\n\\[\n\\nabla_\\mathbf{x} \\hspace{1mm} \\mathbf{x}^\\mathsf{T}\\mathbf{z} = \\mathbf{z}\n\\]\n\n\n\nGradient of \\(\\mathbf{x}^\\mathsf{T}\\mathbf{A}\\mathbf{x}\\)\nLet \\(\\mathbf{x}\\) be a \\(k \\times 1\\) vector and \\(\\mathbf{A}\\) be a \\(k \\times k\\) matrix, such that \\(\\mathbf{A}\\) is not a function of \\(\\mathbf{x}\\) .\nThen the gradient of \\(\\mathbf{x}^\\mathsf{T}\\mathbf{A}\\mathbf{x}\\) with respect to \\(\\mathbf{x}\\) is\n\\[\n\\nabla_\\mathbf{x} \\hspace{1mm} \\mathbf{x}^\\mathsf{T}\\mathbf{A}\\mathbf{x} = (\\mathbf{A}\\mathbf{x} + \\mathbf{A}^\\mathsf{T} \\mathbf{x}) = (\\mathbf{A} + \\mathbf{A}^\\mathsf{T})\\mathbf{x}\n\\]\nIf \\(\\mathbf{A}\\) is symmetric, then\n\\[\n(\\mathbf{A} + \\mathbf{A}^\\mathsf{T})\\mathbf{x} = 2\\mathbf{A}\\mathbf{x}\n\\]\n\n\n\nHessian matrix\nThe Hessian matrix, \\(\\nabla_\\mathbf{x}^2f\\) is a \\(k \\times k\\) matrix of partial second derivatives\n\\[\n\\nabla_{\\mathbf{x}}^2f = \\begin{bmatrix} \\frac{\\partial^2f}{\\partial x_1^2} & \\frac{\\partial^2f}{\\partial x_1 \\partial x_2} & \\dots & \\frac{\\partial^2f}{\\partial x_1\\partial x_k} \\\\\n\\frac{\\partial^2f}{\\partial\\ x_2 \\partial x_1} & \\frac{\\partial^2f}{\\partial x_2^2} & \\dots & \\frac{\\partial^2f}{\\partial x_2 \\partial x_k} \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\n\\frac{\\partial^2f}{\\partial x_k\\partial x_1} & \\frac{\\partial^2f}{\\partial x_k\\partial x_2} & \\dots & \\frac{\\partial^2f}{\\partial x_k^2} \\end{bmatrix}\n\\]"
+  },
+  {
+    "objectID": "math-rules.html#expected-value",
+    "href": "math-rules.html#expected-value",
+    "title": "Math rules",
+    "section": "Expected value",
+    "text": "Expected value\n\nExpected value of random variable \\(X\\)\nThe expected value of a random variable \\(\\mathbf{X}\\) is a weighted average, i.e., the mean value of the possible values a random variable can take weighted by the probability of the outcomes.\nLet \\(f_X(x)\\) be the probability distribution of \\(X\\). If \\(X\\) is continuous then\n\\[\nE(X) = \\int_{-\\infty}^{\\infty}xf_X(x)dx\n\\]\nIf \\(X\\) is discrete then\n\\[\nE(X) = \\sum_{x \\in X}xf_X(x) = \\sum_{x\\in X}xP(X = x)\n\\]\n\n\n\nExpected value of vector \\(\\mathbf{z}\\)\nLet \\(\\mathbf{z} = \\begin{bmatrix}z_1 \\\\ \\vdots \\\\z_p\\end{bmatrix}\\) be a \\(p \\times 1\\) vector of random variables.\n\nThen \\(E(\\mathbf{z}) = E\\begin{bmatrix}z_1 \\\\ \\vdots \\\\ z_p\\end{bmatrix} = \\begin{bmatrix}E(z_1) \\\\ \\vdots \\\\ E(z_p)\\end{bmatrix}\\)\n\n\n\nExpected value of vector \\(\\mathbf{Az}\\)\nLet \\(\\mathbf{A}\\) be an \\(n \\times p\\) matrix of constants and \\(\\mathbf{z}\\) a \\(p \\times 1\\) vector of random variables. Then\n\\[\nE(\\mathbf{Az}) = \\mathbf{A}E(\\mathbf{z})\n\\]\n\n\n\nExpected value of \\(\\mathbf{Az} + \\mathbf{C}\\)\nLet \\(\\mathbf{A}\\) be an \\(n \\times p\\) matrix of constants, \\(\\mathbf{C}\\) a \\(n \\times 1\\) vector of constants, and \\(\\mathbf{z}\\) a \\(p \\times 1\\) vector of random variables. Then\n\\[\nE(\\mathbf{Az} + \\mathbf{C}) = E(\\mathbf{Az}) + E(\\mathbf{C}) = \\mathbf{A}E(\\mathbf{z}) + \\mathbf{C}\n\\]\n\n\nExpected value of \\(\\mathbf{AXA}\\mathsf{^T}\\)\nLet \\(\\mathbf{A}\\) be an \\(n\\times p\\) matrix of constants and \\(\\mathbf{X}\\) a \\(p \\times p\\) matrix. Then\n\\[\nE(\\mathbf{AXA}^\\mathsf{T}) = \\mathbf{A}E(\\mathbf{X})\\mathbf{A}^\\mathsf{T}\n\\]"
+  },
+  {
+    "objectID": "math-rules.html#variance",
+    "href": "math-rules.html#variance",
+    "title": "Math rules",
+    "section": "Variance",
+    "text": "Variance\n\nVariance of random variable \\(X\\)\nThe variance of a random variable \\(X\\) is a measure of the spread of a distribution about its mean.\n\\[\nVar(X) = E[(X - E(X))^2] = E(X^2) - E(X)^2\n\\]\n\n\n\nVariance of vector \\(\\mathbf{z}\\)\nLet \\(\\mathbf{z} = \\begin{bmatrix}z_1 \\\\ \\vdots \\\\z_p\\end{bmatrix}\\) be a \\(p \\times 1\\) vector of random variables. Then\n\\[\nVar(\\mathbf{z}) = E[(\\mathbf{z} - E(\\mathbf{z}))(\\mathbf{z} - E(\\mathbf{z}))^\\mathsf{T}]\n\\]\n\nThis produced the variance-covariance matrix\n\\(Var(\\mathbf{z}) = \\begin{bmatrix}Var(z_1) & Cov(z_1, z_2) & \\dots & Cov(z_1, z_p)\\\\ Cov(z_2, z_1) & Var(z_2) & \\dots & Cov(z_2, z_p) \\\\ \\vdots & \\vdots & \\dots & \\cdot \\\\ Cov(z_p, z_1) & Cov(z_p, z_2) & \\dots & Var(z_p)\\end{bmatrix}\\)\n\n\n\nVariance of \\(\\mathbf{Az}\\)\nLet \\(\\mathbf{A}\\) be an \\(n \\times p\\) matrix of constants and \\(\\mathbf{z}\\) a \\(p \\times 1\\) vector of random variables. Then\n\\[\n\\begin{aligned}\nVar(\\mathbf{Az}) &= E[(\\mathbf{Az} - E(\\mathbf{Az}))(\\mathbf{Az} - E(\\mathbf{Az}))^\\mathsf{T}] \\\\\n& = \\mathbf{A}Var(\\mathbf{z})\\mathbf{A}^\\mathsf{T}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "math-rules.html#probability-distributions",
+    "href": "math-rules.html#probability-distributions",
+    "title": "Math rules",
+    "section": "Probability distributions",
+    "text": "Probability distributions\n\nMultivariate normal distribution\nLet \\(\\mathbf{z}\\) be a \\(p \\times 1\\) vector of random variables, such that \\(\\mathbf{z}\\) follows a multivariate normal distribution with mean \\(\\boldsymbol{\\mu}\\) and variance \\(\\boldsymbol{\\Sigma}\\). Then the probability density function of \\(\\mathbf{z}\\) is\n\\[f(\\mathbf{z}) = \\frac{1}{(2\\pi)^{p/2}|\\boldsymbol{\\Sigma}|^{1/2}}\\exp\\Big\\{-\\frac{1}{2}(\\mathbf{z} - \\boldsymbol{\\mu})^\\mathsf{T}\\boldsymbol{\\Sigma}^{-1}(\\mathbf{z}- \\boldsymbol{\\mu})\\Big\\}\\]\n\n\n\n\n\n\nLinear transformation of normal random variable\nSuppose \\(\\mathbf{z}\\) is a multivariate normal random variable with mean \\(\\boldsymbol{\\mu}\\) and variance \\(\\boldsymbol{\\Sigma}\\). A linear transformation of \\(\\mathbf{z}\\) is also multivariate normal, such that\n\\[\n\\mathbf{A}\\mathbf{z} + \\mathbf{B} \\sim N(\\mathbf{A}\\boldsymbol{\\mu} + \\mathbf{B}, \\mathbf{A}\\boldsymbol{\\Sigma}\\mathbf{A}^\\mathsf{T})\n\\]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA 221 - Regression Analysis: Theory and Applications",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\nweek\ndow\ndate\ntopic\nprepare\nslides\nnotes\nae\nhw\nlab\nproject\ndue\n\n\n\n\n1\nTh\nJan 8\nWelcome to STA 221!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nF\nJan 9\nLab 00\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\nTu\nJan 13\nSimple linear regression (SLR)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\nJan 15\nSLR: Model evaluation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nF\nJan 16\nLab 01\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\nTu\nJan 20\nSLR: Matrix representation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 01 due\n\n\n\nTh\nJan 22\nMultiple linear regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nF\nJan 23\nLab 02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\nTu\nJan 27\nMLR: Types of predictors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 02 due\n\n\n\nTh\nJan 29\nInference for regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 01 due, Statstics experience assigned\n\n\n\nF\nJan 30\nLab 03\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nTu\nFeb 3\nInference for regression cont'd\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 03 due\n\n\n\nTh\nFeb 5\nInference for regression cont'd\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nF\nFeb 6\nLab: Project research topics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\nTu\nFeb 10\nInference for regression cont'd\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject research topics due\n\n\n\nTh\nFeb 12\nExam 01 review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 02 due\n\n\n\nF\nFeb 13\nLab 04\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\nSu\nFeb 15\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 04 due\n\n\n\nTu\nFeb 17\nExam 01\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\nFeb 19\nMLR: Model conditions + diagnostics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTake-home exam due at 9am\n\n\n\nF\nFeb 20\nLab: Project proposal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\nTu\nFeb 24\nMLR: Multicollinearity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject proposal due\n\n\n\nTh\nFeb 26\nVariable transformations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nF\nFeb 27\nLab 05\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\nTu\nMar 3\nMaximum likelihood estimation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 05 due\n\n\n\nTh\nMar 5\nProperties of estimators\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nF\nMar 6\nLab: Project exploratory data analysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\nTu\nMar 10\nNo lecture: Spring break\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\nMar 12\nNo lecture: Spring break\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nF\nMar 13\nNo lab: Spring break\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\nTu\nMar 17\nModel selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\nMar 19\nRidge regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 03 due, Project EDA due\n\n\n\nF\nMar 20\nLab 06\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\nTu\nMar 24\nLogistic regression (LR)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 06 due\n\n\n\nTh\nMar 26\nLR: Prediction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nF\nMar 27\nLab: Project presentations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\nTu\nMar 31\nLR: Model selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\nApr 2\nLR: Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatistics experience due\n\n\n\nF\nApr 3\nLab 07\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\nTu\nApr 7\nEthics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 07 due\n\n\n\nTh\nApr 9\nExam 02 review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHW 04 due\n\n\n\nF\nApr 10\nLab: Project peer review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject peer review due\n\n\n15\nTu\nApr 14\nExam 02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTh\nApr 16\nSpecial topic\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTake home exam due at 9am\n\n\n\nF\nApr 17\nLab: Project work day\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\nTu\nApr 21\nFinal exam review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWritten report + GitHub repo due\n\n\nExam period\nTh\nApr 30\nFinal exam (in-class only)",
+    "crumbs": [
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "computing-r-resources.html",
+    "href": "computing-r-resources.html",
+    "title": "Resources for learning R",
+    "section": "",
+    "text": "Below are freely available resources to learn or review the following in R: data wrangling, data visualization, Quarto basics.",
+    "crumbs": [
+      "Computing",
+      "R resources"
+    ]
+  },
+  {
+    "objectID": "computing-r-resources.html#in-depth-introduction",
+    "href": "computing-r-resources.html#in-depth-introduction",
+    "title": "Resources for learning R",
+    "section": "In-depth introduction",
+    "text": "In-depth introduction\nCoursera: Data Visualization and Transformation with R by Mine Çetinkaya-Rundel and Elijah Meyer\n\nIncludes videos, readings, practice exercise, quizzes, and other resources\nYou can select content within the modules you want to complete.\nFocus on Modules 2 and 3. Review the content in Module 1 as needed.s\nClick here for instructions to register for Coursera for free as a Duke student",
+    "crumbs": [
+      "Computing",
+      "R resources"
+    ]
+  },
+  {
+    "objectID": "computing-r-resources.html#in-depth-review",
+    "href": "computing-r-resources.html#in-depth-review",
+    "title": "Resources for learning R",
+    "section": "In-depth review",
+    "text": "In-depth review\nData Science with R videos by Mine Çetinkaya-Rundel and Elijah Meyer\n\nVideos from the data science Coursera course\nFocus on videos on visualizing and summarizing data\nYou need to join the Coursera course to access the files from the code along videos.\n\nLearn R: An interactive introduction to data analysis with R\n\nHands-on tutorial that can be completed within the site (no RStudio required)\nFocus on Chapters 4 - 6",
+    "crumbs": [
+      "Computing",
+      "R resources"
+    ]
+  },
+  {
+    "objectID": "computing-r-resources.html#shorter-review",
+    "href": "computing-r-resources.html#shorter-review",
+    "title": "Resources for learning R",
+    "section": "Shorter review",
+    "text": "Shorter review\nR for Data Science (2nd ed) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund\n\nFocus on Chapters 1 - 3, 10",
+    "crumbs": [
+      "Computing",
+      "R resources"
+    ]
+  },
+  {
+    "objectID": "computing-r-resources.html#additional-resources",
+    "href": "computing-r-resources.html#additional-resources",
+    "title": "Resources for learning R",
+    "section": "Additional resources",
+    "text": "Additional resources\n\nTidy Modeling with R by Max Kuhn & Julia Silge\nPosit Cheatsheets\nR workshops by Duke Center for Data and Visualization Sciences",
+    "crumbs": [
+      "Computing",
+      "R resources"
+    ]
+  },
+  {
+    "objectID": "prepare/prepare-lec01.html",
+    "href": "prepare/prepare-lec01.html",
+    "title": "Prepare for Lecture 01",
+    "section": "",
+    "text": "📖 Read the syllabus"
+  },
+  {
+    "objectID": "prepare/prepare-lec02.html",
+    "href": "prepare/prepare-lec02.html",
+    "title": "Prepare for Lecture 02",
+    "section": "",
+    "text": "Required\n📖 Read Chapter 1\n📖 Read Section 4.1 - 4.6\n\nOptional computing introduction/ review\n📖 Read GitHub for supporting, reusing, contributing, and failing safely\n🎥 Watch Meet the Toolkit: R + RStudio\n🎥 Watch Meet the Toolkit: Quarto"
+  },
+  {
+    "objectID": "prepare/prepare-lec04.html",
+    "href": "prepare/prepare-lec04.html",
+    "title": "Prepare for Lecture 04: SLR - Matrix representation",
+    "section": "",
+    "text": "Review linear algebra concepts (as needed)\n\nMatrices and vectors: [slides][video]\nMatrix-Vector products: [slides][video]\nMatrix multiplication: [slides][video]\n\n\n\n\n\n\n\nNote\n\n\n\nAll linear algebra review materials from Math 218: Matrices and Vectors (Summer 2024) taught by Dr. Brian Fitzpatrick at Duke University"
+  },
+  {
+    "objectID": "prepare/prepare-lec08.html",
+    "href": "prepare/prepare-lec08.html",
+    "title": "Prepare for Lecture 08: Inference for regression",
+    "section": "",
+    "text": "📖 Read Inference for Simple Linear Regression:\n\nSections 5.1 - 5.3\nSection 5.6\nSection 5.8\nSection 5.9"
+  },
+  {
+    "objectID": "exam-01-practice.html",
+    "href": "exam-01-practice.html",
+    "title": "Exam 01 practice",
+    "section": "",
+    "text": "Important\n\n\n\nThis page contains practice problems to help prepare for Exam 01. This set of practice problems is not comprehensive. You should review these study tips as you prepare for the exam.\n\nThere is no answer key for these problems. You may ask questions in office hours and on Ed Discussion."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-1",
+    "href": "exam-01-practice.html#exercise-1",
+    "title": "Exam 01 practice",
+    "section": "Exercise 1",
+    "text": "Exercise 1\nWe will use data from nrow(penguins) penguins at Palmer Station in Antartica to fit linear regression model model using species (Adelie, Chinstrap, or Gentoo), flipper length (in millimeters), and bill depth (in millimeters) to predict its body mass (in grams). Click here to read more about the variables.\nThe linear regression model has the form\n\\[\n\\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\boldsymbol{\\epsilon}\n\\]Write the dimensions of \\(\\mathbf{y}, \\mathbf{X},\\boldsymbol{\\beta}, \\boldsymbol{\\epsilon}\\) specifically for this analysis."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-2",
+    "href": "exam-01-practice.html#exercise-2",
+    "title": "Exam 01 practice",
+    "section": "Exercise 2",
+    "text": "Exercise 2\nThe output for the model described in Exercise 1, along with 95% confidence intervals for the model coefficients, is shown below:\n\npenguins_fit &lt;- lm(body_mass_g ~ species + flipper_length_mm + \n                     bill_depth_mm + body_mass_g, \n                   data = penguins)\n\nWarning in model.matrix.default(mt, mf, contrasts): the response appeared on\nthe right-hand side and was dropped\n\n\nWarning in model.matrix.default(mt, mf, contrasts): problem with term 4 in\nmodel.matrix: no columns are assigned\n\ntidy(penguins_fit,conf.int = TRUE) |&gt;\n  kable(digits = 3)\n\n\n\n\n\n\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\nconf.low\nconf.high\n\n\n\n\n(Intercept)\n-4526.887\n516.931\n-8.757\n0.000\n-5543.705\n-3510.068\n\n\nspeciesChinstrap\n-131.968\n51.400\n-2.567\n0.011\n-233.073\n-30.863\n\n\nspeciesGentoo\n1288.968\n132.774\n9.708\n0.000\n1027.798\n1550.138\n\n\nflipper_length_mm\n25.700\n3.098\n8.295\n0.000\n19.606\n31.794\n\n\nbill_depth_mm\n182.364\n18.358\n9.934\n0.000\n146.252\n218.475\n\n\n\n\n\n\nInterpret the coefficient of flipper_length_mm in the context of the data.\nWhat is the baseline category for speices?\nInterpret the coefficient of speciesChinstrap in the context of the data."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-3",
+    "href": "exam-01-practice.html#exercise-3",
+    "title": "Exam 01 practice",
+    "section": "Exercise 3",
+    "text": "Exercise 3\n\nDoes the intercept have a meaningful interpretation?\nIf not, what are some strategies we can use to fit a model such that the intercept is meaningful?"
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-4",
+    "href": "exam-01-practice.html#exercise-4",
+    "title": "Exam 01 practice",
+    "section": "Exercise 4",
+    "text": "Exercise 4\nThere are three species in the data set (Adelie, Chinstrap, Gentoo), but only two terms for species in the model. Use the design matrix to show why we cannot put indicators for all three species and the intercept in the model."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-5",
+    "href": "exam-01-practice.html#exercise-5",
+    "title": "Exam 01 practice",
+    "section": "Exercise 5",
+    "text": "Exercise 5\nWe conduct the following hypothesis test for the coefficient of flipper_length_mm.\n\nNull: There is no linear relationship between flipper length and body mass, after accounting for species and bill depth\nAlternative: There is a linear relationship between flipper length and body mass, after accounting for species and bill depth\n\n\nWrite these hypotheses in mathematical notation.\nThe standard error is 3.098. Explain how this value is computed and what this value means in the context of the data.\nThe test statistic is 8.295. Explain how this value is computed and what this value means in the context of the data.\nWhat distribution is used to compute the p-value?\nWhat is the conclusion from the test in the context of the data?"
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-6",
+    "href": "exam-01-practice.html#exercise-6",
+    "title": "Exam 01 practice",
+    "section": "Exercise 6",
+    "text": "Exercise 6\n\nInterpret the 95% confidence interval for flipper_length_mm in the context of the data.\nIs the interval consistent with the test from the previous exercise? Briefly explain."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-7",
+    "href": "exam-01-practice.html#exercise-7",
+    "title": "Exam 01 practice",
+    "section": "Exercise 7",
+    "text": "Exercise 7\nSketch a scatterplot of the relationship between bill depth and body mass such that the effect of bill depth differs by species."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-8",
+    "href": "exam-01-practice.html#exercise-8",
+    "title": "Exam 01 practice",
+    "section": "Exercise 8",
+    "text": "Exercise 8\nWhen we conduct inference for regression, we assume the following distribution for \\(\\mathbf{y}|\\mathbf{X}\\)\n\\[\n\\mathbf{y}|\\mathbf{X} \\sim(\\mathbf{X}\\boldsymbol{\\beta}, \\sigma^2_\\epsilon\\mathbf{I})\n\\]\n\nShow that \\(E(\\mathbf{y}|\\mathbf{X}) = \\mathbf{X}\\boldsymbol{\\beta}\\)\nShow that \\(Var(\\mathbf{y}|\\mathbf{X})= \\sigma^2_{\\epsilon}\\mathbf{I}\\)\n\nSee February 4 lecture “Inference for Regression” to check your work."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-9",
+    "href": "exam-01-practice.html#exercise-9",
+    "title": "Exam 01 practice",
+    "section": "Exercise 9",
+    "text": "Exercise 9\nWe conduct inference on the coefficients \\(\\boldsymbol{\\beta}\\) assuming that the variability of \\(\\mathbf{y}|\\mathbf{X}\\) is constant for value (or combination) of predictors. Briefly explain why is assumption is important."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-10",
+    "href": "exam-01-practice.html#exercise-10",
+    "title": "Exam 01 practice",
+    "section": "Exercise 10",
+    "text": "Exercise 10\nGiven the model \\(\\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\boldsymbol{\\epsilon}\\), derive the least-squares estimator \\(\\hat{\\boldsymbol{\\beta}}\\) using matrix calculus.\nSee January 21 lecture “SLR: Matrix representation” to check your work."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-11",
+    "href": "exam-01-practice.html#exercise-11",
+    "title": "Exam 01 practice",
+    "section": "Exercise 11",
+    "text": "Exercise 11\nGiven the model \\(\\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\boldsymbol{\\epsilon}\\), derive the least-squares estimator \\(\\hat{\\boldsymbol{\\beta}}\\) using the geometric interpretation of the model.\nSee January 23 lecture “Geometric interpretation of least-squares regression” to check your work."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-12",
+    "href": "exam-01-practice.html#exercise-12",
+    "title": "Exam 01 practice",
+    "section": "Exercise 12",
+    "text": "Exercise 12\nExplain why we say “holding all else constant” when interpreting the coefficients in a multiple linear regression model."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-13",
+    "href": "exam-01-practice.html#exercise-13",
+    "title": "Exam 01 practice",
+    "section": "Exercise 13",
+    "text": "Exercise 13\nSuppose we have two models:\n\nModel 1 includes predictors \\(X_1\\) and \\(X_2\\)\nModel 2 includes predictors \\(X_1, X_2, X_3\\) and \\(X_4\\)\n\nExplain why we should use \\(Adj. R^2\\) and not \\(R^2\\) to compare these models."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-14",
+    "href": "exam-01-practice.html#exercise-14",
+    "title": "Exam 01 practice",
+    "section": "Exercise 14",
+    "text": "Exercise 14\nRework Exercises 1 - 5 in HW 01 for more practice with theory and math."
+  },
+  {
+    "objectID": "exam-01-practice.html#exercise-15",
+    "href": "exam-01-practice.html#exercise-15",
+    "title": "Exam 01 practice",
+    "section": "Exercise 15",
+    "text": "Exercise 15\nRework Exercises 1 - 5 in HW 02 for more practice with theory and math."
+  },
+  {
+    "objectID": "exam-01-practice.html#relevant-lectures-assignments-and-aes",
+    "href": "exam-01-practice.html#relevant-lectures-assignments-and-aes",
+    "title": "Exam 01 practice",
+    "section": "Relevant lectures, assignments and AEs",
+    "text": "Relevant lectures, assignments and AEs\nAsk yourself “why” questions as you the slides, review your answers, process, and derivations on these assignments. It may also be helpful to explain your process to others.\n\nLectures: January 9 - February 13 (February 13 lecture is an exam review)\nHW 01 - 02\nLab 01 - 04 (Lab 04 is an exam review)\nAE 01 - 04 (AE 04 is an exam review)"
+  },
+  {
+    "objectID": "hw/hw-02.html",
+    "href": "hw/hw-02.html",
+    "title": "HW 02",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Homework",
+      "HW 02"
+    ]
+  },
+  {
+    "objectID": "hw/hw-01.html",
+    "href": "hw/hw-01.html",
+    "title": "HW 01",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Homework",
+      "HW 01"
+    ]
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "STA 221 - Regression Analysis: Theory and Applications",
+    "section": "",
+    "text": "In STA 221, students will learn how linear and logistic regression models are used to explore multivariable relationships, apply these methods to answer relevant and engaging questions using a data-driven approach, and learn the mathematical underpinnings of the models. Students will develop computing skills to implement a reproducible data analysis workflow and gain experience communicating statistical results. Throughout the semester, students will work on a team project where they will develop a research question, answer it using methods learned in the course, and share results through a written report and presentation.\nTopics include applications of linear and logistic regression, analysis of variance, model diagnostics, and model selection. Regression parameter estimation via maximum likelihood least squares will also be discussed. Students will gain experience using the computing tools R and GitHub to analyze real-world data from a variety of fields.\n\n\nEither any STA 100-level course or STA 230, 231, or 240L and MATH 216, 218, or 221. The recommended co-requisite is STA 230, 231, or 240L. Interested students with different backgrounds should seek instructor consent.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#pre-requisites",
+    "href": "overview.html#pre-requisites",
+    "title": "STA 221 - Regression Analysis: Theory and Applications",
+    "section": "",
+    "text": "Either any STA 100-level course or STA 230, 231, or 240L and MATH 216, 218, or 221. The recommended co-requisite is STA 230, 231, or 240L. Interested students with different backgrounds should seek instructor consent.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "overview.html#teaching-assistants",
+    "href": "overview.html#teaching-assistants",
+    "title": "STA 221 - Regression Analysis: Theory and Applications",
+    "section": "Teaching assistants",
+    "text": "Teaching assistants\n\n\n\nName\nRole\n\n\nCathy Lee\n\n\n\nKrish Bansal\n\n\n\nXueyan Hu\n\n\n\nAllison Yang\n\n\n\n\nOffice hours times and locations on Canvas.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "labs/lab-07.html",
+    "href": "labs/lab-07.html",
+    "title": "Lab 07",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Labs",
+      "Lab 07"
+    ]
+  },
+  {
+    "objectID": "labs/lab-04.html",
+    "href": "labs/lab-04.html",
+    "title": "Lab 04",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Labs",
+      "Lab 04"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01.html",
+    "href": "labs/lab-01.html",
+    "title": "Lab 01",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Labs",
+      "Lab 01"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02.html",
+    "href": "labs/lab-02.html",
+    "title": "Lab 02",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Labs",
+      "Lab 02"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03.html",
+    "href": "labs/lab-03.html",
+    "title": "Lab 03",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Labs",
+      "Lab 03"
+    ]
+  },
+  {
+    "objectID": "labs/lab-00.html",
+    "href": "labs/lab-00.html",
+    "title": "Lab 00",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Labs",
+      "Lab 00"
+    ]
+  },
+  {
+    "objectID": "labs/lab-05.html",
+    "href": "labs/lab-05.html",
+    "title": "Lab 05",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Labs",
+      "Lab 05"
+    ]
+  },
+  {
+    "objectID": "labs/lab-06.html",
+    "href": "labs/lab-06.html",
+    "title": "Lab 06",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Labs",
+      "Lab 06"
+    ]
+  },
+  {
+    "objectID": "hw/hw-04.html",
+    "href": "hw/hw-04.html",
+    "title": "HW 04",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Homework",
+      "HW 04"
+    ]
+  },
+  {
+    "objectID": "hw/hw-03.html",
+    "href": "hw/hw-03.html",
+    "title": "HW 03",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Homework",
+      "HW 03"
+    ]
+  },
+  {
+    "objectID": "hw/stats-experience.html",
+    "href": "hw/stats-experience.html",
+    "title": "Statistics Experience",
+    "section": "",
+    "text": "To be posted.",
+    "crumbs": [
+      "Homework",
+      "Statistics experience"
+    ]
+  },
+  {
+    "objectID": "prepare/prepare-lec20.html",
+    "href": "prepare/prepare-lec20.html",
+    "title": "Prepare for Lecture 20: Logistic regression - Prediction",
+    "section": "",
+    "text": "📖 Classification module in Google Machine Learning Crash Course"
+  },
+  {
+    "objectID": "prepare/prepare-lec09.html",
+    "href": "prepare/prepare-lec09.html",
+    "title": "Prepare for Lecture 09: Inference for regression cont’d",
+    "section": "",
+    "text": "📖 Read Inference for Simple Linear Regression:\n\nSections 5.1 - 5.3\nSection 5.6\nSection 5.8\nSection 5.9"
+  },
+  {
+    "objectID": "prepare/prepare-lec05.html",
+    "href": "prepare/prepare-lec05.html",
+    "title": "Prepare for Lecture 05: SLR - Matrix representation cont’d",
+    "section": "",
+    "text": "Review linear algebra concepts (as needed)\n\nVector geometry: [slides][video]\n\n\n\n\n\n\n\nNote\n\n\n\nAll linear algebra review materials from Math 218: Matrices and Vectors (Summer 2024) taught by Dr. Brian Fitzpatrick at Duke University"
+  },
+  {
+    "objectID": "prepare/prepare-lec03.html",
+    "href": "prepare/prepare-lec03.html",
+    "title": "Prepare for Lecture 03: Model evaluation",
+    "section": "",
+    "text": "Required\n📖 Read Section 4.7\n\nOptional computing introduction/ review\n🎥 Watch Meet the Toolkit: R + RStudio\n🎥 Watch Meet the Toolkit: Quarto"
+  },
+  {
+    "objectID": "support.html",
+    "href": "support.html",
+    "title": "Course support",
+    "section": "",
+    "text": "We expect everyone will have questions at some point in the semester, so we want to make sure you can identify when that is and feel comfortable seeking help.",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#lectures-and-labs",
+    "href": "support.html#lectures-and-labs",
+    "title": "Course support",
+    "section": "Lectures and labs",
+    "text": "Lectures and labs\nIf you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#office-hours",
+    "href": "support.html#office-hours",
+    "title": "Course support",
+    "section": "Office hours",
+    "text": "Office hours\nThe teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on Canvas to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. I encourage you to take advantage of them!\nMake a pledge to stop by office hours at least once during the first three weeks of class. If you truly have no questions to ask, just stop by and say hi and introduce yourself. You can find a list of the teaching team’s office hours on Canvas.",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#ed-discussion",
+    "href": "support.html#ed-discussion",
+    "title": "Course support",
+    "section": "Ed Discussion",
+    "text": "Ed Discussion\nOutside of class and office hours, any general questions about course content or assignments should be posted on Ed Discussion. There is a chance another student has already asked a similar question, so please check the other posts on Ed Discussion before adding a new question. If you know the answer to a question that is posted, I encourage you to respond!",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#email",
+    "href": "support.html#email",
+    "title": "Course support",
+    "section": "Email",
+    "text": "Email\nIf you have questions about personal matters that are not appropriate for the class discussion forum (e.g. illness, accommodations, etc.), you may me at maria.tackett@duke.edu. If you email me, please include “STA 221” in the subject line. Barring extenuating circumstances, I will respond to STA 221 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#academic-support",
+    "href": "support.html#academic-support",
+    "title": "Course support",
+    "section": "Academic support",
+    "text": "Academic support\nThe Academic Resource Center (the ARC) offers services to support students academically during their undergraduate careers at Duke. The ARC can provide support with time management, academic skills and strategies, course-specific tutoring, presentation skills, public speaking, and more. ARC services are available free to all Duke undergraduate students studying any discipline. Learn more:\n\nLearning Consultations – time management, study strategies, learning preferences, and more\nVOICE Lab – strengthen public speaking, practice presentations, and more\n\nYou can contact the Academic Resource Center by phone at (919) 684-5917, by email at theARC@duke.edu, or by visiting http://arc.duke.edu/.",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#mental-health-and-wellbeing-resources",
+    "href": "support.html#mental-health-and-wellbeing-resources",
+    "title": "Course support",
+    "section": "Mental health and wellbeing resources",
+    "text": "Mental health and wellbeing resources\n\nDukeReach provides comprehensive outreach services to support students in managing all aspects of wellbeing, including referrals and follow-up services for students who are experiencing significant challenges related to mental health, physical health, social adjustment, and/or a variety of other stressors. You can contact the DukeReach team at dukereach@duke.edu and/or submit a referral at support.students.duke.edu. \nCounseling and Psychological Services (CAPS) offers counseling services to Duke students including virtual appointments, and referrals in the community. You do not need an appointment for an initial assessment. You may walk in or call 919-660-1000 to get started. Hours: Monday-Friday 9:00am - 4:00pm. After hours counseling services are available at no additional cost to students, you can call: 919-660-1000 Option 2.\nTimelyCare (formerly known as Blue Devils Care) is an online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling.\nDuke Student Health offers a wide range of healthcare services for all Duke students, many of which are covered by the student health fee. To make an appointment call (919) 681-9355. Hours: Monday - Friday, 8am - 4:30pm, Thursday 9am - 4:30pm. Closed from 12-12:30 each day.",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#technology-accommodations",
+    "href": "support.html#technology-accommodations",
+    "title": "Course support",
+    "section": "Technology accommodations",
+    "text": "Technology accommodations\nHighly aided students who have limited access to computers may request loaner laptops through the DukeLIFE Technology Assistance Program. Please note that supplies are limited.\nNote that we will be using Duke’s computational resources in this course. These resources are freely available to you. As long as your computer can connect to the internet and open a browser window, you can perform the necessary computing for this course. All software we use is open-source and/or freely available.",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#course-materials-costs",
+    "href": "support.html#course-materials-costs",
+    "title": "Course support",
+    "section": "Course materials costs",
+    "text": "Course materials costs\nThere are no costs associated with this course. All readings will come from freely available, open resources (open-source textbooks, journal articles, etc.).",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "support.html#assistance-with-zoom-or-canvas",
+    "href": "support.html#assistance-with-zoom-or-canvas",
+    "title": "Course support",
+    "section": "Assistance with Zoom or Canvas",
+    "text": "Assistance with Zoom or Canvas\nFor technical help with Canvas or Zoom, contact the Duke OIT Service Desk at oit.duke.edu/help. You can also access the self-service help documentation for Zoom here and for Canvas here.\nZoom will be used for online office hours as well as as a backup option should we need to hold the course online instead of in person.",
+    "crumbs": [
+      "Support"
+    ]
+  },
+  {
+    "objectID": "computing-access.html",
+    "href": "computing-access.html",
+    "title": "Computing access",
+    "section": "",
+    "text": "To access computing resources for the introductory data science courses offered by the Duke University Department of Statistical Science, go to the Duke Container Manager website, cmgr.oit.duke.edu/containers.\nIf this is your first time accessing the containers, click on reserve STA221 on the Reservations available menu on the right. You only need to do this once, and when you do, you’ll see this container moved to the My reservations menu on the left.\nNext, click on STA221 under My reservations to access the RStudio instance you’ll use for the course.",
+    "crumbs": [
+      "Computing",
+      "Access"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "links.html",
+    "href": "links.html",
+    "title": "Useful links",
+    "section": "",
+    "text": "STA221 RStudio containers\n🔗 for Duke Container Manager\n\n\nCourse GitHub organization\n🔗 for GitHub\n\n\nCourse Canvas site\n🔗 for Canvas\n\n\nDiscussion forum\n🔗 to Ed Discussion\n\n\nAssignment submission\n🔗 to Gradescope",
+    "crumbs": [
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "STA 221 Syllabus",
+    "section": "",
+    "text": "See Canvas for class meeting times and locations.\n\n\n\n\n\n\nName\nRole\n\n\n\n\nProf. Maria Tackett\nInstructor\n\n\nCathy Lee\n\n\n\nKrish Bansal\n\n\n\nXueyan Hu\n\n\n\nAllison Yang\n\n\n\nCathy Lee\n\n\n\n\nOffice hours times and locations on Canvas.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-info",
+    "href": "syllabus.html#course-info",
+    "title": "STA 221 Syllabus",
+    "section": "",
+    "text": "See Canvas for class meeting times and locations.\n\n\n\n\n\n\nName\nRole\n\n\n\n\nProf. Maria Tackett\nInstructor\n\n\nCathy Lee\n\n\n\nKrish Bansal\n\n\n\nXueyan Hu\n\n\n\nAllison Yang\n\n\n\nCathy Lee\n\n\n\n\nOffice hours times and locations on Canvas.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-description",
+    "href": "syllabus.html#course-description",
+    "title": "STA 221 Syllabus",
+    "section": "Course description",
+    "text": "Course description\nIn STA 221, students will learn how linear and logistic regression models are used to explore multivariable relationships, apply these methods to answer relevant and engaging questions using a data-driven approach, and learn the mathematical underpinnings of the models. Students will develop computing skills to implement a reproducible data analysis workflow and gain experience communicating statistical results. Throughout the semester, students will work on a team project where they will develop a research question, answer it using methods learned in the course, and share results through a written report and presentation.\nTopics include applications of linear and logistic regression, analysis of variance, model diagnostics, and model selection. Regression parameter estimation via maximum likelihood least squares will also be discussed. Students will gain experience using the computing tools R and GitHub to analyze real-world data from a variety of fields.\n\nPrerequisites\nEither any STA 100-level course or STA 230, 231, or 240L and MATH 216, 218, or 221. The recommended co-requisite is STA 230, 231, or 240L. Interested students with different backgrounds should seek instructor consent.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-learning-objectives",
+    "href": "syllabus.html#course-learning-objectives",
+    "title": "STA 221 Syllabus",
+    "section": "Course learning objectives",
+    "text": "Course learning objectives\nBy the end of the semester, you will be able to…\n\nanalyze data to explore real-world multivariable relationships.\nfit, interpret, and draw conclusions from linear and logistic regression models.\nimplement a reproducible analysis workflow using R for analysis, Quarto to write reports and GitHub for version control and collaboration.\nexplain the mathematical foundations of linear and logistic regression.\neffectively communicate statistical results to a general audience.\nassess the ethical considerations and implications of analysis decisions.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-materials",
+    "href": "syllabus.html#course-materials",
+    "title": "STA 221 Syllabus",
+    "section": "Course materials",
+    "text": "Course materials\nMost readings in this course will come from Introduction to Regression Analysis: A Data Science Approach. It is freely available online (introregression.netlify.app). Readings from this text and other sources will be posted under the “prepare” column on the course schedule. We will use the statistical software R. Students will be able to access R through Docker containers provided by Duke Office of Information Technology. See the computing page for more information.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-community",
+    "href": "syllabus.html#course-community",
+    "title": "STA 221 Syllabus",
+    "section": "Course community",
+    "text": "Course community\n\nInclusive community\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with Duke’s Commitment to Diversity and Inclusion. Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.\nFurthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:\n\nIf you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.\nI (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please let me or a member of the teaching team know.\n\n\n\nPronouns\nUsing pronouns can help foster a respectful campus environment where all community members can thrive. Sharing pronouns is always optional for members of the Duke community. If you would like to share yours, you can update them in DukeHub. You can learn more at the DukeHub & Zoom Tutorials.\n\n\nAccessibility\nIf there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website, sta221-sp26.netlify.app.\nLinks to Zoom meetings may be found in Canvas. Periodic announcements will be sent via email and will also be available through Ed Discussion and Canvas Announcements. Please check your email regularly to ensure you have the latest announcements for the course.\n\n\nEmail\nIf you have questions about assignment extensions, accommodations, or any other matter not appropriate for the class discussion forum, please email me directly at maria.tackett@duke.edu. If you email me, please include “STA 221” in the subject line. Barring extenuating circumstances, I will respond to STA 221 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#five-tips-for-success",
+    "href": "syllabus.html#five-tips-for-success",
+    "title": "STA 221 Syllabus",
+    "section": "Five tips for success",
+    "text": "Five tips for success\nThe TAs and I will provide materials, answer questions, and provide guidance to help you learn the material in this course. Below are five things you can do to be successful in STA 221:\n\nComplete all “prepare” readings and tasks before class.\nActively participate and engage in lectures and labs.\nAsk questions frequently during lecture, in office hours, on Ed Discussion, and among your classmates.\nComplete all homework and labs, asking yourself “why” questions as you go through the steps to complete each exercise.\nStay current with the course material, as each new concept builds on previous ones.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#getting-help-in-the-course",
+    "href": "syllabus.html#getting-help-in-the-course",
+    "title": "STA 221 Syllabus",
+    "section": "Getting help in the course",
+    "text": "Getting help in the course\n\nIf you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.\nThe teaching team is here to help you be successful in the course. You are encouraged to attend office hours1 to ask questions about the course content and assignments. Many questions are most effectively answered as you discuss them with others, so office hours are a valuable resource. You are encouraged to use them!\nOutside of class and office hours, any general questions about course content or assignments should be posted on the class discussion forum Ed Discussion. There is a chance another student has already asked a similar question, so please check the other posts in Ed Discussion before adding a new question. If you know the answer to a question posted in the discussion forum, you are encouraged to respond!\n\nCheck out the Support page for more resources.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#what-to-expect-in-the-course",
+    "href": "syllabus.html#what-to-expect-in-the-course",
+    "title": "STA 221 Syllabus",
+    "section": "What to expect in the course",
+    "text": "What to expect in the course\n\nLectures and labs\nLectures and labs are designed to be interactive, so you gain experience applying new concepts and learning from each other. My role as instructor is to introduce you to new methods, tools, and techniques, but it is up to you to take them and make use of them. A lot of what you do in this course will involve writing code, and coding is a skill that is best learned by doing. Therefore, as much as possible, you will be working on a variety of tasks and activities during the lectures and labs. You are expected to prepare for class by completing assigned readings, attend all lecture and lab sessions, and meaningfully contribute to in-class exercises and discussion.\nYou are expected to bring a laptop, tablet, or any device with internet and a keyboard to each class so that you can participate in the in-class exercises. Please make sure your device is fully charged before you come to class, because the number of outlets in the classroom will not be sufficient to accommodate everyone.\n\n\nTeams\nYou will be assigned to a team towards the beginning of the semester. You are encouraged to sit with your teammates in lecture and you will also work with them in the lab sessions. All team members are expected to contribute equally to the completion of the group activities, labs and the final project. You will be asked to complete teamwork evaluations and self-reflections throughout the semester. Failure to adequately contribute to an assignment can result in a penalty to your score relative to the team’s overall mark.\nYou are expected to make use of the provided GitHub repository as the central collaborative platform. Commits to this repository will be used as one of several metrics of each team member’s relative contribution for each project.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#activities-assessment",
+    "href": "syllabus.html#activities-assessment",
+    "title": "STA 221 Syllabus",
+    "section": "Activities & Assessment",
+    "text": "Activities & Assessment\nYou will be assessed based on the following components: labs, homework, exams, and a final project.\n\nLabs\nIn labs, you will apply the concepts discussed in lecture to a variety of data analysis scenarios, with a focus on the computation and communication. Most lab assignments will be completed in teams, and all team members are expected to contribute equally to the completion of each assignment. You are expected to use the team’s Git repository in the course’s GitHub organization as the central platform for collaboration. Commits to this repository will be used as a metric of each team member’s relative contribution for each lab, and there will be periodic peer evaluation on the team collaboration. Lab assignments will be completed using Quarto, correspond to an appropriate GitHub repository, and submitted for grading in Gradescope.\nLabs will be graded based on completion and workflow. The lowest lab grade will be dropped at the end of the semester.\n\n\nHomework\nIn homework, you will apply what you’ve learned during lecture and lab to complete data analysis exercises and explain the underlying mathematics. You may discuss homework assignments with other students; however, homework should be completed and submitted individually. Similar to lab assignments, homework must be typed up using Quarto and GitHub and submitted as a PDF in Gradescope.\nOne homework assignment will be dedicated to a statistics experience. The statistics experience is an opportunity to engage with statistics and data science outside of the classroom through podcasts, books, seminars, data analysis competitions, and other activities. As you complete these experiences, the goal is to consider how the material you’re learning in the course connects with society more broadly.\nThe lowest homework grade will be dropped at the end of the semester.\n\n\nExams\nThere will be two midterm exams and one final exam in this course. Each midterm exam will include a closed-note in-class component and an open-note take-home component. Through these exams you have the opportunity to demonstrate what you’ve learned in the course thus far. The exams will focus on both conceptual understanding of the applied and mathematical content and application through analysis and computational tasks. The final exam will be a cumulative closed-note in-class exam during the final exam period set by the university. The final exam will be completed on paper (no computing) and will focus on applied and mathematical content. The content on each exam will be based on the content in reading assignments, lectures, labs, and homework. More detail about the exams will be given during the semester.\nThere are no make-up exams. If you miss Exam 01 or Exam 02 due to a reason documented by a Dean’s Excuse, the final exam score will replace the missed exam score. If you miss the final exam due to a reason documented by a Dean’s Excuse, you will receive an “Incomplete” in the course and take the final exam at a later date.\nFor students who take all three exams, the final exam score will replace the lower of the two mid-term scores, if the final exam score is higher than the Exam 01 and/or Exam 02 score.\n\n\nProject\nThe purpose of the final project is to apply what you’ve learned to analyze a data-driven research question of your choice. The project will be completed with your lab teams, and each team will present their work through a written report and presentation. More information about the project will be provided during the semester. You can learn more on the Project page.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#grading",
+    "href": "syllabus.html#grading",
+    "title": "STA 221 Syllabus",
+    "section": "Grading",
+    "text": "Grading\nThe final course grade will be calculated as follows:\n\n\n\n\nCategory\nPercentage\n\n\n\n\nHomework\n15%\n\n\nLabs\n10%\n\n\nExam 01\n20%\n\n\nExam 02\n20%\n\n\nFinal Exam\n20%\n\n\nFinal project\n15%\n\n\n\n\n\nThe final letter grade will be determined based on the following thresholds:\n\n\n\n\nLetter Grade\nFinal Course Grade\n\n\n\n\nA\n&gt;= 93\n\n\nA-\n90 - 92.99\n\n\nB+\n87 - 89.99\n\n\nB\n83 - 86.99\n\n\nB-\n80 - 82.99\n\n\nC+\n77 - 79.99\n\n\nC\n73 - 76.99\n\n\nC-\n70 - 72.99\n\n\nD+\n67 - 69.99\n\n\nD\n63 - 66.99\n\n\nD-\n60 - 62.99\n\n\nF\n&lt; 60",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-policies",
+    "href": "syllabus.html#course-policies",
+    "title": "STA 221 Syllabus",
+    "section": "Course policies",
+    "text": "Course policies\n\nDuke Community Standard\nAll students must adhere to the Duke Community Standard(DCS): Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, and accountability. Citizens of this community commit to reflect upon these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity.\nTo uphold the Duke Community Standard, students agree:\n\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors;and\nI will act if the Standard is compromised.\n\n\n\n\n\n\nAcademic honesty\nTL;DR: Don’t cheat!\n\nThe homework assignments must be completed individually and you are welcomed to discuss the assignment with classmates at a high level (e.g., discuss what’s the best way for approaching a problem, what functions are useful for accomplishing a particular task, etc.). However you may not directly share answers to homework questions (including any code) with anyone other than myself and the teaching assistants.\nYou may not discuss or otherwise work with others on the exams. Unauthorized collaboration or using unauthorized materials will be considered a violation for all students involved. More details will be given closer to the exam date.\nFor the projects and team labs, collaboration within teams is not only allowed, but expected. Communication between teams at a high level is also allowed however you may not share code or components of the project or team labs across teams.\nReusing code: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.\nUse of artificial intelligence (AI): You should treat AI tools, such as ChatGPT, the same as other online resources. There are two guiding principles that govern how you can use AI in this course:2 (1) Cognitive dimension: Working with AI should not reduce your ability to think clearly. We will practice using AI to facilitate—rather than hinder—learning. (2) Ethical dimension: Students using AI should be transparent about their use and make sure it aligns with academic integrity.\n\nAI tools for code: You may make use of the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. You may use these guidelines for citing AI-generated content.\nNo AI tools for narrative: Unless instructed otherwise, AI is not permitted for writing narrative that is copy and pasted into the assignment. In general, you may use AI as a resource as you complete assignments but not to answer the exercises for you. You are ultimately responsible for the work you turn in; it should reflect your understanding of the course content.\n\n\nIf you are unsure if the use of a particular resource complies with the academic honesty policy, please ask a member of the teaching team.\nRegardless of course delivery format, it is the responsibility of all students to understand and follow all Duke policies, including academic integrity (e.g., completing one’s own work, following proper citation of sources, adhering to guidance around group work projects,and more). Ignoring these requirements is a violation of the Duke Community Standard. Any questions and/or concerns regarding academic integrity can be directed to the Office of Student Conduct and Community Standards at conduct@duke.edu.\n\n\nLate work policy\nThe due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback in a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped to accommodate such circumstances.\n\nThere is no late work permitted on lab assignments. These are graded for completion, so a lab assignment will be graded as “Not complete” if it is submitted after the deadline.\nHomework and labs may be submitted up to 2 days late. There will be a 5% deduction for each 24-hour period the assignment is late.\nThe late work policy for exams will be provided with the exam instructions.\nThe late work policy for the project will be provided with the project instructions.\n\n\n\nWaiver for extenuating circumstances\nIf there are circumstances that prevent you from completing a homework assignment by the stated due date, you may email me at maria.tackett@duke.edu before the deadline to waive the late penalty. In your email, you only need to request the waiver; you do not need to provide explanation. This waiver may only be used once in the semester, so only use it for a truly extenuating circumstance.\nIf there are circumstances that are having a longer-term impact on your academic performance, please let your academic dean know, as they can be a resource.\n\n\nRegrade Requests\nRegrade requests must be submitted on Gradescope within a week of when an assignment is returned. Regrade requests will be considered if there was an error in the grade calculation or if you feel a correct answer was mistakenly marked as incorrect. Requests to dispute the number of points deducted for an incorrect response will not be considered. Note that by submitting a regrade request, the entire question will be graded which could potentially result in losing points.\nNo grades will be changed after the final exam has been administered.\n\n\nAttendance policy\nEvery student is expected to attend and participate in lecture and labs. There may be times, however, when you cannot attend class. Lecture recordings are available upon request for students who have an excused absence. See the Lecture recording request policy for more detail. If you miss a lecture, make sure to review the material and complete the application exercise, if applicable, before the next lecture.\nLabs are dedicated to completing the lab assignment and collaborating with your lab team. If you miss a lab session, make sure to communicate with your lab TA and teammates about how you can make up your contribution. If you know you’re going to miss a lab session and you’re feeling well enough to do so, notify your lab TA and teammates ahead of time.\nMore details on Trinity attendance policies are available here.\n\n\nLecture recording request\nLectures will be recorded on Panopto and will be made available to students with an excused absence upon request. Videos shared with such students will be available for a week after the lecture date. To request a particular lecture’s video, please fill out the form at the link below. Please submit the form within 24 hours of missing lecture to ensure you have sufficient time to watch the recording. Please also make sure that any official documentation, such as incapacitation forms, Dean’s excuses, NOVAPs, and quarantine/removal from class notices from student health are also uploaded to the form.\n🔗 https://forms.office.com/r/RW2TTPrsQq\nAbout one week before each exam, the class recordings will be available to all students. These recordings will be available until the start of the exam.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#accommodations",
+    "href": "syllabus.html#accommodations",
+    "title": "STA 221 Syllabus",
+    "section": "Accommodations",
+    "text": "Accommodations\n\nAcademic accommodations\nIf you need accommodations for this class, you will need to register with the Student Disability Access Office (SDAO) and provide them with documentation related to your needs. SDAO will work with you to determine what accommodations are appropriate for your situation. Please note that accommodations are not retroactive and disability accommodations cannot be provided until a Faculty Accommodation Letter has been given to me. Please contact SDAO for more information: sdao@duke.edu or access.duke.edu.\n\n\nReligious accommodations\nStudents are permitted by university policy to be absent from class to observe a religious holiday. Accordingly, Trinity College of Arts & Sciences and the Pratt School of Engineering have established procedures to be followed by students for notifying their instructors of an absence necessitated by the observance of a religious holiday. Please submit requests for religious accommodations at the beginning of the semester so that we can work to make suitable arrangements well ahead of time. You can find the policy and relevant notification form here: trinity.duke.edu/undergraduate/academic-policies/religious-holidays",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#academic-support",
+    "href": "syllabus.html#academic-support",
+    "title": "STA 221 Syllabus",
+    "section": "Academic support",
+    "text": "Academic support\n\nAcademic Resource Center\nThe Academic Resource Center (the ARC) offers services to support students academically during their undergraduate careers at Duke. The ARC can provide support with time management, academic skills and strategies, course-specific tutoring, presentation skills, public speaking, and more. ARC services are available free to all Duke undergraduate students studying any discipline. Learn more:\n\nLearning Consultations – time management, study strategies, learning preferences, and more\nVOICE Lab – strengthen public speaking, practice presentations, and more\n\nYou can contact the Academic Resource Center by phone at (919) 684-5917, by email at theARC@duke.edu, or by visiting http://arc.duke.edu/.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#important-dates",
+    "href": "syllabus.html#important-dates",
+    "title": "STA 221 Syllabus",
+    "section": "Important dates",
+    "text": "Important dates\n\nJanuary 7: Classes begin\nJanuary 19: Martin Luther King Jr. Day holiday.\nJanuary 21: Drop/Add ends\nMarch 9 - 13: Spring break\nMarch 25: Last day to withdraw with “W”\nApril 22: Classes end\nApril 23-26: Reading period\nApril 27 - May 2: Final exam period\n\nClick here for the full Duke academic calendar.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#footnotes",
+    "href": "syllabus.html#footnotes",
+    "title": "STA 221 Syllabus",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nOffice hours are times the teaching team set aside each week to meet with students.↩︎\nThese guiding principles are based on Course Policies related to ChatGPT and other AI Tools developed by Joel Gladd, Ph.D.↩︎↩︎",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html",
+    "href": "computing-troubleshooting.html",
+    "title": "Computing troubleshooting",
+    "section": "",
+    "text": "If you’re having difficulty launching an RStudio session from your reserved container, go to status.oit.duke.edu and scroll down to Teaching and Learning Tools. Under this heading you’ll find an entry called Container Manager (CMGR Coursework Containers).",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html#footnotes",
+    "href": "computing-troubleshooting.html#footnotes",
+    "title": "Computing troubleshooting",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThese troubleshooting steps are from https://sta199-f25.github.io/computing-troubleshooting.html↩︎",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  }
+]
