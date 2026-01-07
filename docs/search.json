@@ -929,5 +929,320 @@
       "Computing",
       "Troubleshooting"
     ]
+  },
+  {
+    "objectID": "slides/01-welcome.html#meet-prof.-tackett",
+    "href": "slides/01-welcome.html#meet-prof.-tackett",
+    "title": "Welcome to STA 221!",
+    "section": "Meet Prof. Tackett!",
+    "text": "Meet Prof. Tackett!\n\nEducation and career journey\n\nBS in Math and MS in Statistics from University of Tennessee\nStatistician at Capital One\nPhD in Statistics from University of Virginia\nAssociate Professor of the Practice, Department of Statistical Science at Duke\n\nWork focuses on statistics education and inclusive teaching practices\nCo-leader of the Bass Connections team Mental Health and the Justice System in Durham County\nMom of 3-year-old twins 🙂 (and one grumpy cat)"
+  },
+  {
+    "objectID": "slides/01-welcome.html#meet-the-teaching-assistants-tas",
+    "href": "slides/01-welcome.html#meet-the-teaching-assistants-tas",
+    "title": "Welcome to STA 221!",
+    "section": "Meet the Teaching Assistants (TAs)!",
+    "text": "Meet the Teaching Assistants (TAs)!\n\nCathy Lee (PhD): Lab 01 leader\nKrish Bansal (UG): Lab 01 helper\nXueyan Hu (MS): Lab 02 leader\nAllison Yang (UG): Lab 02 helper"
+  },
+  {
+    "objectID": "slides/01-welcome.html#check-in-on-ed-discussion",
+    "href": "slides/01-welcome.html#check-in-on-ed-discussion",
+    "title": "Welcome to STA 221!",
+    "section": "Check-in on Ed Discussion!",
+    "text": "Check-in on Ed Discussion!\n\nClick on the link or scan the QR code to answer the Ed Discussion poll\nhttps://edstem.org/us/courses/70811/discussion/5950645"
+  },
+  {
+    "objectID": "slides/01-welcome.html#topics",
+    "href": "slides/01-welcome.html#topics",
+    "title": "Welcome to STA 221!",
+    "section": "Topics",
+    "text": "Topics\n\nIntroduction to the course\nSyllabus activity\nReproducibility"
+  },
+  {
+    "objectID": "slides/01-welcome.html#what-is-regression-analysis",
+    "href": "slides/01-welcome.html#what-is-regression-analysis",
+    "title": "Welcome to STA 221!",
+    "section": "What is regression analysis?",
+    "text": "What is regression analysis?\n\n\nIn statistical modeling, regression analysis is a statistical method for estimating the relationship between a dependent variable (often called the outcome or response variable, or a label in machine learning parlance) and one or more independent variables (often called regressors, predictors, covariates, explanatory variables or features).[1][2]\n\nSource: Wikipedia (January 2026)"
+  },
+  {
+    "objectID": "slides/01-welcome.html#regression-in-practice",
+    "href": "slides/01-welcome.html#regression-in-practice",
+    "title": "Welcome to STA 221!",
+    "section": "Regression in practice",
+    "text": "Regression in practice\n\n\n\n\n\n\n\nRodgers, J. L. (2024). Reading Harry Potter in French: Using Regression to Evaluate Foreign Language Vocabulary Learning by an Old Guy. CHANCE, 37(3), 13–21."
+  },
+  {
+    "objectID": "slides/01-welcome.html#regression-in-practice-1",
+    "href": "slides/01-welcome.html#regression-in-practice-1",
+    "title": "Welcome to STA 221!",
+    "section": "Regression in practice",
+    "text": "Regression in practice\n\n\n\n\n\n\\[\n\\text{Lookups} = 23.0 - 0.04 \\times \\text{Page Number}\n\\]\n\n\nRodgers, J. L. (2024). Reading Harry Potter in French: Using Regression to Evaluate Foreign Language Vocabulary Learning by an Old Guy. CHANCE, 37(3), 13–21."
+  },
+  {
+    "objectID": "slides/01-welcome.html#example-rent-vs.-commute-time",
+    "href": "slides/01-welcome.html#example-rent-vs.-commute-time",
+    "title": "Welcome to STA 221!",
+    "section": "Example: Rent vs. commute time",
+    "text": "Example: Rent vs. commute time\n\\[\n\\text{Lookups} = \\beta_0 + \\beta_1 ~ \\text{Page Number} + \\epsilon\n\\]\n\n\n\\[\n\\begin{bmatrix}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n\n\\end{bmatrix} =\n\\begin{bmatrix}\n1 & x_1 \\\\\n1 & x_2 \\\\\n\\vdots & \\vdots \\\\\n1 & x_n\n\\end{bmatrix}\n\\begin{bmatrix}\n\\beta_0 \\\\\n\\beta_1 \\\\\n\\end{bmatrix} +  \\begin{bmatrix}\n\\epsilon_1 \\\\\n\\epsilon_2 \\\\\n\\vdots \\\\\n\\epsilon_n\n\\end{bmatrix}\n\\]"
+  },
+  {
+    "objectID": "slides/01-welcome.html#what-is-sta-221",
+    "href": "slides/01-welcome.html#what-is-sta-221",
+    "title": "Welcome to STA 221!",
+    "section": "What is STA 221?",
+    "text": "What is STA 221?\n\n\nPrerequisites: Introductory statistics or probability course and linear algebra\nRecommended corequisite: Probability course"
+  },
+  {
+    "objectID": "slides/01-welcome.html#course-learning-objectives",
+    "href": "slides/01-welcome.html#course-learning-objectives",
+    "title": "Welcome to STA 221!",
+    "section": "Course learning objectives",
+    "text": "Course learning objectives\nBy the end of the semester, you will be able to…\n\nanalyze data to explore real-world multivariable relationships.\nfit, interpret, and draw conclusions from linear and logistic regression models.\nimplement a reproducible analysis workflow using R for analysis, Quarto to write reports and GitHub for version control and collaboration.\nexplain the mathematical foundations of linear and logistic regression.\neffectively communicate statistical results to a general audience.\nassess the ethical considerations and implications of analysis decisions."
+  },
+  {
+    "objectID": "slides/01-welcome.html#course-topics",
+    "href": "slides/01-welcome.html#course-topics",
+    "title": "Welcome to STA 221!",
+    "section": "Course topics",
+    "text": "Course topics\n\n\n\nLinear regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nMatrix representation of regression\nModel conditions and diagnostics\nModel selection\nTypes of predictors\nProperties of estimators\n\n\n\n\nLogistic regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nInference\n\n\n\nSpecial topics\n\nTBD\n\n\n\nGeneral topics\n\nComputing using R and GitHub\nPresenting statistical results\nCollaboration and teamwork"
+  },
+  {
+    "objectID": "slides/01-welcome.html#course-toolkit",
+    "href": "slides/01-welcome.html#course-toolkit",
+    "title": "Welcome to STA 221!",
+    "section": "Course toolkit",
+    "text": "Course toolkit\n\nWebsite: https://sta221-sp26.github.io\n\nCentral hub for the course!\nTour of the website\n\nCanvas: https://canvas.duke.edu/courses/73984\n\nGradebook\nOffice hours\nAnnouncements\nGradescope\nEd Discussion\n\nGitHub: https://github.com/sta221-sp26\n\nDistribute assignments\nPlatform for version control and collaboration"
+  },
+  {
+    "objectID": "slides/01-welcome.html#computing-toolkit",
+    "href": "slides/01-welcome.html#computing-toolkit",
+    "title": "Welcome to STA 221!",
+    "section": "Computing toolkit",
+    "text": "Computing toolkit\n\n\n\n\n\n\n\n\n\n\n\nAll analyses using R, a statistical programming language\nWrite reproducible reports in Quarto\nAccess RStudio through STA 221 Docker Containers\n\n\n\n\n\n\n\n\n\n\n\n\nAccess assignments\nFacilitates version control and collaboration\nAll work in STA 221 course organization"
+  },
+  {
+    "objectID": "slides/01-welcome.html#classroom-community",
+    "href": "slides/01-welcome.html#classroom-community",
+    "title": "Welcome to STA 221!",
+    "section": "Classroom community",
+    "text": "Classroom community\n\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit.\n\nIf you have a name that differs from those that appear in your official Duke records, please let me know.\nPlease let me know your preferred pronouns, if you are comfortable sharing.\nIf you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your advisers and deans are excellent resources.\nI (like many people) am still in the process of learning about diverse perspectives and identities. If something was said or done in class (by anyone) that made you feel uncomfortable, please talk to me about it."
+  },
+  {
+    "objectID": "slides/01-welcome.html#accessibility",
+    "href": "slides/01-welcome.html#accessibility",
+    "title": "Welcome to STA 221!",
+    "section": "Accessibility",
+    "text": "Accessibility\n\nThe Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments.\nIf you have documented accommodations from SDAO, please send the documentation as soon as possible.\nI am committed to making all course activities and materials accessible. If any course component is not accessible to you in any way, please don’t hesitate to let me know."
+  },
+  {
+    "objectID": "slides/01-welcome.html#syllabus-activity",
+    "href": "slides/01-welcome.html#syllabus-activity",
+    "title": "Welcome to STA 221!",
+    "section": "Syllabus activity",
+    "text": "Syllabus activity\n\n\nRead the portion of the syllabus assigned to your group.\nDiscuss the key points and questions you my have with your neighbors.\nWe’ll ask for volunteers to share a summary with the class."
+  },
+  {
+    "objectID": "slides/01-welcome.html#syllabus-activity-assignments",
+    "href": "slides/01-welcome.html#syllabus-activity-assignments",
+    "title": "Welcome to STA 221!",
+    "section": "Syllabus activity assignments",
+    "text": "Syllabus activity assignments\n\nGroups 1 & 2: What to expect in lectures and labs\nGroups 3 & 4: Teams\nGroups 5 & 6: Labs and homework\nGroups 7 & 8: Exams and final project\nGroups 9 & 10: Academic honesty\nGroups 11 & 12: Late work policy and waiver for extenuating circumstances\nGroups 13 & 14: Attendance and lecture recording request"
+  },
+  {
+    "objectID": "slides/01-welcome.html#syllabus-activity-report-out",
+    "href": "slides/01-welcome.html#syllabus-activity-report-out",
+    "title": "Welcome to STA 221!",
+    "section": "Syllabus activity report out",
+    "text": "Syllabus activity report out\n\nGroups 1 & 2: What to expect in lectures and labs\nGroups 3 & 4: Teams\nGroups 5 & 6: Labs and homework\nGroups 7 & 8: Exams and final project\nGroups 9 & 10: Academic honesty\nGroups 11 & 12: Late work policy and waiver for extenuating circumstances\nGroups 13 & 14: Attendance and lecture recording request"
+  },
+  {
+    "objectID": "slides/01-welcome.html#grading",
+    "href": "slides/01-welcome.html#grading",
+    "title": "Welcome to STA 221!",
+    "section": "Grading",
+    "text": "Grading\n\n\n\nCategory\nPercentage\n\n\n\n\nHomework\n15%\n\n\nLabs\n10%\n\n\nExam 01\n20%\n\n\nExam 02\n20%\n\n\nFinal Exam\n20%\n\n\nFinal project\n15%"
+  },
+  {
+    "objectID": "slides/01-welcome.html#five-tips-for-success-in-sta-221",
+    "href": "slides/01-welcome.html#five-tips-for-success-in-sta-221",
+    "title": "Welcome to STA 221!",
+    "section": "Five tips for success in STA 221",
+    "text": "Five tips for success in STA 221\n\nComplete all “prepare” readings and tasks before class.\nActively participate and engage in lectures and labs.\nAsk questions frequently during lecture, in office hours, on Ed Discussion, and among your classmates.\nComplete all homework and labs, asking yourself “why” questions as you go through the steps to complete each exercise.\nStay current with the course material, as each new concept builds on previous ones."
+  },
+  {
+    "objectID": "slides/01-welcome.html#reproducibility-checklist",
+    "href": "slides/01-welcome.html#reproducibility-checklist",
+    "title": "Welcome to STA 221!",
+    "section": "Reproducibility checklist",
+    "text": "Reproducibility checklist\n\nWhat does it mean for an analysis to be reproducible?\n\n\nNear term goals:\n✔️ Can the tables and figures be exactly reproduced from the code and data?\n✔️ Does the code actually do what you think it does?\n✔️ In addition to what was done, is it clear why it was done?\n\n\nLong term goals:\n✔️ Can the code be used for other data?\n✔️ Can you extend the code to do other things?"
+  },
+  {
+    "objectID": "slides/01-welcome.html#why-is-reproducibility-important",
+    "href": "slides/01-welcome.html#why-is-reproducibility-important",
+    "title": "Welcome to STA 221!",
+    "section": "Why is reproducibility important?",
+    "text": "Why is reproducibility important?\n\nResults produced are more reliable and trustworthy (Ostblom and Timbers 2022)\nFacilitates more effective collaboration (Ostblom and Timbers 2022)\nContributing to science, which builds and organizes knowledge in terms of testable hypotheses (Alexander 2023)\nPossible to identify and correct errors or biases in the analysis process (Alexander 2023)"
+  },
+  {
+    "objectID": "slides/01-welcome.html#why-is-reproducibility-important-1",
+    "href": "slides/01-welcome.html#why-is-reproducibility-important-1",
+    "title": "Welcome to STA 221!",
+    "section": "Why is reproducibility important?",
+    "text": "Why is reproducibility important?\n\n\n\n\n\n\n\nOriginally reported “the intervention, compared with usual care, resulted in a fewer number of mean COPD-related hospitalizations and emergency department visits at 6 months per participant.”\nThere were actually more COPD-related hospitalizations and emergency department visits in the intervention group compared to the control group\nMixed up the intervention vs. control group using “0/1” coding\n\n\n\n\n\nhttps://jamanetwork.com/journals/jama/fullarticle/2752474"
+  },
+  {
+    "objectID": "slides/01-welcome.html#toolkit",
+    "href": "slides/01-welcome.html#toolkit",
+    "title": "Welcome to STA 221!",
+    "section": "Toolkit",
+    "text": "Toolkit\n\nScriptability \\(\\rightarrow\\) R\nLiterate programming (code, narrative, output in one place) \\(\\rightarrow\\) Quarto\nVersion control \\(\\rightarrow\\) Git / GitHub"
+  },
+  {
+    "objectID": "slides/01-welcome.html#r-and-rstudio",
+    "href": "slides/01-welcome.html#r-and-rstudio",
+    "title": "Welcome to STA 221!",
+    "section": "R and RStudio",
+    "text": "R and RStudio\n\nR is a statistical programming language\nRStudio is a convenient interface for R (an integrated development environment, IDE)\n\n\nSource: Statistical Inference via Data Science"
+  },
+  {
+    "objectID": "slides/01-welcome.html#rstudio-ide",
+    "href": "slides/01-welcome.html#rstudio-ide",
+    "title": "Welcome to STA 221!",
+    "section": "RStudio IDE",
+    "text": "RStudio IDE"
+  },
+  {
+    "objectID": "slides/01-welcome.html#quarto",
+    "href": "slides/01-welcome.html#quarto",
+    "title": "Welcome to STA 221!",
+    "section": "Quarto",
+    "text": "Quarto\n\nFully reproducible reports – the analysis is run from the beginning each time you render\nCode goes in chunks and narrative goes outside of chunks\nVisual editor to make document editing experience similar to a word processor (Google docs, Word, Pages, etc.)"
+  },
+  {
+    "objectID": "slides/01-welcome.html#quarto-1",
+    "href": "slides/01-welcome.html#quarto-1",
+    "title": "Welcome to STA 221!",
+    "section": "Quarto",
+    "text": "Quarto"
+  },
+  {
+    "objectID": "slides/01-welcome.html#how-will-we-use-quarto",
+    "href": "slides/01-welcome.html#how-will-we-use-quarto",
+    "title": "Welcome to STA 221!",
+    "section": "How will we use Quarto?",
+    "text": "How will we use Quarto?\n\nEvery application exercise and assignment is written in a Quarto document\nYou’ll have a template Quarto document to start with\nThe amount of scaffolding in the template will decrease over the semester"
+  },
+  {
+    "objectID": "slides/01-welcome.html#what-is-versioning",
+    "href": "slides/01-welcome.html#what-is-versioning",
+    "title": "Welcome to STA 221!",
+    "section": "What is versioning?",
+    "text": "What is versioning?"
+  },
+  {
+    "objectID": "slides/01-welcome.html#what-is-versioning-1",
+    "href": "slides/01-welcome.html#what-is-versioning-1",
+    "title": "Welcome to STA 221!",
+    "section": "What is versioning?",
+    "text": "What is versioning?\nwith human readable messages"
+  },
+  {
+    "objectID": "slides/01-welcome.html#why-do-we-need-version-control",
+    "href": "slides/01-welcome.html#why-do-we-need-version-control",
+    "title": "Welcome to STA 221!",
+    "section": "Why do we need version control?",
+    "text": "Why do we need version control?\n\n\n\n\n\n\n\n\nProvides a clear record of how the analysis methods evolved. This makes analysis auditable and thus more trustworthy and reliable. (Ostblom and Timbers 2022)"
+  },
+  {
+    "objectID": "slides/01-welcome.html#git-and-github",
+    "href": "slides/01-welcome.html#git-and-github",
+    "title": "Welcome to STA 221!",
+    "section": "git and GitHub",
+    "text": "git and GitHub\n\n\ngit is a version control system – like “Track Changes” features from Microsoft Word.\nGitHub is the home for your git-based projects on the internet (like DropBox but much better).\nThere are a lot of git commands and very few people know them all. 99% of the time you will use git to add, commit, push, and pull."
+  },
+  {
+    "objectID": "slides/01-welcome.html#before-next-class",
+    "href": "slides/01-welcome.html#before-next-class",
+    "title": "Welcome to STA 221!",
+    "section": "Before next class",
+    "text": "Before next class\n\nComplete Lecture 02 Prepare\nReview syllabus\nLabs start tomorrow January 9\nOffice hours start Monday, January 12"
+  },
+  {
+    "objectID": "slides/01-welcome.html#references",
+    "href": "slides/01-welcome.html#references",
+    "title": "Welcome to STA 221!",
+    "section": "References",
+    "text": "References\n\n\n\n\nAlexander, Rohan. 2023. “Telling Stories with Data,” June. https://doi.org/10.1201/9781003229407.\n\n\nOstblom, Joel, and Tiffany Timbers. 2022. “Opinionated Practices for Teaching Reproducibility: Motivation, Guided Instruction and Practice.” Journal of Statistics and Data Science Education 30 (3): 241–50. https://doi.org/10.1080/26939169.2022.2074922."
+  },
+  {
+    "objectID": "slides/01-welcome.html#check-in-on-ed-discussion---update",
+    "href": "slides/01-welcome.html#check-in-on-ed-discussion---update",
+    "title": "Welcome to STA 221!",
+    "section": "Check-in on Ed Discussion! - UPDATE",
+    "text": "Check-in on Ed Discussion! - UPDATE\n\nClick on the link or scan the QR code to answer the Ed Discussion poll\nhttps://edstem.org/us/courses/70811/discussion/5950645"
+  },
+  {
+    "objectID": "slides/01-welcome.html#data-science-workflow",
+    "href": "slides/01-welcome.html#data-science-workflow",
+    "title": "Welcome to STA 221!",
+    "section": "Data science workflow",
+    "text": "Data science workflow\n\nSource: Introduction to Regression Analysis"
+  },
+  {
+    "objectID": "slides/01-welcome.html#example-reading-harry-potter",
+    "href": "slides/01-welcome.html#example-reading-harry-potter",
+    "title": "Welcome to STA 221!",
+    "section": "Example: Reading Harry Potter",
+    "text": "Example: Reading Harry Potter\n\n\n\n\n\n\\[\n\\text{Lookups} = 23.0 - 0.04 \\times \\text{Page Number}\n\\]\n\n\nRodgers, J. L. (2024). Reading Harry Potter in French: Using Regression to Evaluate Foreign Language Vocabulary Learning by an Old Guy. CHANCE, 37(3), 13–21."
+  },
+  {
+    "objectID": "slides/01-welcome.html#example-reading-harry-potter-1",
+    "href": "slides/01-welcome.html#example-reading-harry-potter-1",
+    "title": "Welcome to STA 221!",
+    "section": "Example: Reading Harry Potter",
+    "text": "Example: Reading Harry Potter\n\\[\n\\text{Lookups} = \\beta_0 + \\beta_1 ~ \\text{Page Number} + \\epsilon\n\\]\n\n\n\\[\n\\begin{bmatrix}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n\n\\end{bmatrix} =\n\\begin{bmatrix}\n1 & x_1 \\\\\n1 & x_2 \\\\\n\\vdots & \\vdots \\\\\n1 & x_n\n\\end{bmatrix}\n\\begin{bmatrix}\n\\beta_0 \\\\\n\\beta_1 \\\\\n\\end{bmatrix} +  \\begin{bmatrix}\n\\epsilon_1 \\\\\n\\epsilon_2 \\\\\n\\vdots \\\\\n\\epsilon_n\n\\end{bmatrix}\n\\]"
+  },
+  {
+    "objectID": "slides/01-welcome.html#example-add-new-example-update",
+    "href": "slides/01-welcome.html#example-add-new-example-update",
+    "title": "Welcome to STA 221!",
+    "section": "Example: ADD NEW EXAMPLE [UPDATE]",
+    "text": "Example: ADD NEW EXAMPLE [UPDATE]"
+  },
+  {
+    "objectID": "slides/01-welcome.html#syllabus-activity-assignments---update",
+    "href": "slides/01-welcome.html#syllabus-activity-assignments---update",
+    "title": "Welcome to STA 221!",
+    "section": "Syllabus activity assignments - UPDATE",
+    "text": "Syllabus activity assignments - UPDATE\n\nGroups 1 & 2: What to expect in lectures and labs\nGroups 3 & 4: Teams\nGroups 5 & 6: Labs and homework\nGroups 7 & 8: Exams and final project\nGroups 9 & 10: Academic honesty\nGroups 11 & 12: Late work policy and waiver for extenuating circumstances\nGroups 13 & 14: Attendance and lecture recording request"
+  },
+  {
+    "objectID": "slides/01-welcome.html#syllabus-activity-report-out---update",
+    "href": "slides/01-welcome.html#syllabus-activity-report-out---update",
+    "title": "Welcome to STA 221!",
+    "section": "Syllabus activity report out - UPDATE",
+    "text": "Syllabus activity report out - UPDATE\n\nGroup 1: What to expect in lectures and labs\nGroup 2: Homework and lab assignments\nGroup 3: Exams and project\nGroup 4: Participation\nGroup 5: Academic honesty (except AI policy)\nGroup 6: Artificial intelligence policy\nGroup 7: Late work policy and waiver for extenuating circumstances\nGroup 8: Attendance and lecture recording request\nGroup 9: Getting help in the course"
+  },
+  {
+    "objectID": "slides/01-welcome.html#linear-regression-in-practice",
+    "href": "slides/01-welcome.html#linear-regression-in-practice",
+    "title": "Welcome to STA 221!",
+    "section": "Linear regression in practice",
+    "text": "Linear regression in practice\n\n\n\n\n\n\n\nRodgers, J. L. (2024). Reading Harry Potter in French: Using Regression to Evaluate Foreign Language Vocabulary Learning by an Old Guy. CHANCE, 37(3), 13–21."
+  },
+  {
+    "objectID": "slides/01-welcome.html#logistic-regression-in-practice",
+    "href": "slides/01-welcome.html#logistic-regression-in-practice",
+    "title": "Welcome to STA 221!",
+    "section": "Logistic regression in practice",
+    "text": "Logistic regression in practice\nPew Research Center conducted the 2025 What Web Browsing Data Tells Us About How AI Appears Online.\n\n\n\nSource: Pew Research\n\n\n\n\nChapekis, A., Lieb, A., Shah, S., Smith, A. (2025) What Web Browsing Data Tells Us about How AI Appears Online. Pew Research Center.https://www.pewresearch.org/data-labs/2025/05/23/what-web-browsing-data-tells-us-about-how-ai-appears-online/"
+  },
+  {
+    "objectID": "slides/01-welcome.html#example-ai-mentions-online",
+    "href": "slides/01-welcome.html#example-ai-mentions-online",
+    "title": "Welcome to STA 221!",
+    "section": "Example: AI mentions online",
+    "text": "Example: AI mentions online\nResearchers used a logistic regression model to classify online articles in which AI was a central focus versus an incedental mention.\n\n\n\n\n\nSource: Pew Research Center\n\n\n\n\\[\n\\log\\Big(\\frac{\\pi}{1-\\pi}\\Big) = \\mathbf{X}\\boldsymbol{\\beta}\n\\]"
   }
 ]
