@@ -134,15 +134,17 @@ $$
 
 Pew Research Center conducted the 2025 [What Web Browsing Data Tells Us About How AI Appears Online](https://www.pewresearch.org/data-labs/2025/05/23/what-web-browsing-data-tells-us-about-how-ai-appears-online/).
 
-![Source: [Pew Research](https://www.pewresearch.org/data-labs/2025/05/23/what-web-browsing-data-tells-us-about-how-ai-appears-online/)](images/clipboard-93809062.png){fig-align="center" width="50%"}
+![Source: [Pew Research](https://www.pewresearch.org/data-labs/2025/05/23/what-web-browsing-data-tells-us-about-how-ai-appears-online/)](images/clipboard-93809062.png){fig-align="center" width="40%"}
 
-::: aside
+:::: aside
+::: small
 [Chapekis, A., Lieb, A., Shah, S., Smith, A. (2025) What Web Browsing Data Tells Us about How AI Appears Online. Pew Research Center.https://www.pewresearch.org/data-labs/2025/05/23/what-web-browsing-data-tells-us-about-how-ai-appears-online/](https://www.pewresearch.org/data-labs/2025/05/23/what-web-browsing-data-tells-us-about-how-ai-appears-online/)
 :::
+::::
 
-## Example: AI mentions online
+## Example: AI mentions 
 
-Researchers used a logistic regression model to classify online articles in which AI was a central focus versus an incedental mention.
+Researchers used logistic regression to classify online articles in which AI was a central focus versus an incidental mention.
 
 ::::: columns
 ::: {.column width="70%"}
@@ -297,9 +299,10 @@ It is my intent that students from all diverse backgrounds and perspectives be w
 ## Syllabus activity
 
 ::: question
-1.  Read the portion of the syllabus assigned to your group.
-2.  Discuss the key points and questions you my have with your neighbors.
-3.  We'll ask for volunteers to share a summary with the class.
+1.  Introduce yourselves.
+2.  Read the portion of the syllabus assigned to your group.
+3.  Discuss the key points and questions you my have with your neighbors.
+4.  We'll ask for volunteers to share a summary with the class.
 :::
 
 ## Syllabus activity assignments
@@ -483,7 +486,7 @@ Provides a clear record of how the analysis methods evolved. This makes analysis
 
 -   Review [syllabus](https://sta221-sp26.github.io/syllabus)
 
--   Labs start tomorrow January 9
+-   Labs start tomorrow, January 9
 
 -   Office hours start Monday, January 12
 
