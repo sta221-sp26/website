@@ -14,14 +14,13 @@ See Canvas for class meeting times and locations.
 
 ### Teaching team
 
-| Name                | Role       |
-|---------------------|------------|
-| Prof. Maria Tackett | Instructor |
-| Cathy Lee           |            |
-| Krish Bansal        |            |
-| Xueyan Hu           |            |
-| Allison Yang        |            |
-| Cathy Lee           |            |
+| Name                | Role          |
+|---------------------|---------------|
+| Prof. Maria Tackett | Instructor    |
+| Cathy Lee           | Lab 01 leader |
+| Krish Bansal        | Lab 01 helper |
+| Xueyan Hu           | Lab 02 leader |
+| Allison Yang        | Lab 02 helper |
 
 **Office hours times and locations on Canvas.**
 
