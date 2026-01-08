@@ -61,4 +61,4 @@ Your TA will demonstrate the steps to set up computing and interact with RStudio
 
 <br>
 
-🔗 [sta221-sp26.github.io/labs/lab-00.html](sta221-sp26.github.io/labs/lab-00.html)
+🔗 <https://sta221-sp26.github.io/labs/lab-00.html>
