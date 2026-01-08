@@ -234,7 +234,7 @@ The due dates for assignments are there to help you keep up with the course mate
 
 -   There is no late work permitted on lab assignments. These are graded for completion, so a lab assignment will be graded as "Not complete" if it is submitted after the deadline.
 
--   Homework and labs may be submitted up to 2 days late. There will be a 5% deduction for each 24-hour period the assignment is late.
+-   Homework may be submitted up to 2 days late. There will be a 5% deduction for each 24-hour period the assignment is late.
 
 -   The late work policy for exams will be provided with the exam instructions.
 
