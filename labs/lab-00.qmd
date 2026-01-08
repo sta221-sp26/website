@@ -104,7 +104,7 @@ Complete the short exercise to make sure RStudio and GitHub are correctly config
 
 ## Getting started
 
-1.  Click here to create your individual `lab-00` repo: <https://classroom.github.com/a/HJQpdTm_>
+1.  Click here to create your individual `lab-00` repo: <https://classroom.github.com/a/TiUOgn-X>
 
 2.  Click to open your `lab-00` repo.
 
