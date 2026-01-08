@@ -3,7 +3,7 @@ title: "Welcome to STA 221!"
 author: "Prof. Maria Tackett"
 date: "01-08-2026"
 date-format: "MMMM DD, YYYY"
-footer: "[🔗sta221-sp26.github.io](sta221-sp26.github.io)"
+footer: "[🔗 sta221-sp26.github.io](https://sta221-sp26.github.io)"
 logo: "../images/logo.png"
 format: 
   revealjs: 
