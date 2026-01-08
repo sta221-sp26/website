@@ -296,7 +296,7 @@
     "href": "slides/01-welcome.html#course-topics",
     "title": "Welcome to STA 221!",
     "section": "Course topics",
-    "text": "Course topics\n\n\n\nLinear regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nMatrix representation of regression\nModel conditions and diagnostics\nModel selection\nTypes of predictors\nProperties of estimators\n\n\n\n\nLogistic regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nInference\n\n\n\nSpecial topics\n\nTBD\n\n\n\nGeneral topics\n\nComputing using R and GitHub\nPresenting statistical results\nCollaboration and teamwork"
+    "text": "Course topics\n\n\n\nLinear regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nMatrix representation of regression\nModel conditions and diagnostics\nModel selection\nTypes of predictors\nProperties of estimators\n\n\n\n\nLogistic regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nInference\n\n\n\nSpecial topics\n\n\n\nGeneral topics\n\nComputing using R and GitHub\nPresenting statistical results\nCollaboration and teamwork\nEthics"
   },
   {
     "objectID": "slides/01-welcome.html#course-toolkit",
@@ -555,7 +555,7 @@
     "href": "slides/01-welcome-notes.html#course-topics",
     "title": "Welcome to STA 221!",
     "section": "Course topics",
-    "text": "Course topics\n\n\n\n\nLinear regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nMatrix representation of regression\nModel conditions and diagnostics\nModel selection\nTypes of predictors\nProperties of estimators\n\n\n\n\n\n\nLogistic regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nInference\n\n\n\n\n\nSpecial topics\n\nTBD\n\n\n\n\n\nGeneral topics\n\nComputing using R and GitHub\nPresenting statistical results\nCollaboration and teamwork"
+    "text": "Course topics\n\n\n\n\nLinear regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nMatrix representation of regression\nModel conditions and diagnostics\nModel selection\nTypes of predictors\nProperties of estimators\n\n\n\n\n\n\nLogistic regression\n\nCoefficient estimation and interpretation\nPrediction\nModel evaluation\nInference\n\n\n\n\n\nSpecial topics\n\n\n\n\n\nGeneral topics\n\nComputing using R and GitHub\nPresenting statistical results\nCollaboration and teamwork\nEthics"
   },
   {
     "objectID": "slides/01-welcome-notes.html#course-toolkit",

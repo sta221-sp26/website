@@ -81,7 +81,7 @@ Source: Wikipedia (January 2026)
 ![](images/01/harry-potter-regression.png){fig-align="center" width="60%"}
 
 ::: aside
-[Rodgers, J. L. (2024). Reading Harry Potter in French: Using Regression to Evaluate Foreign Language Vocabulary Learning by an Old Guy. CHANCE, 37(3), 13–21.](https://canvas.duke.edu/courses/51767/files?preview=2439624)
+[Rodgers, J. L. (2024). Reading Harry Potter in French: Using Regression to Evaluate Foreign Language Vocabulary Learning by an Old Guy. CHANCE, 37(3), 13–21.](https://canvas.duke.edu/courses/73984/files?preview=4295020)
 :::
 
 ## Example: Reading Harry Potter
@@ -93,7 +93,7 @@ $$
 $$
 
 ::: aside
-[Rodgers, J. L. (2024). Reading Harry Potter in French: Using Regression to Evaluate Foreign Language Vocabulary Learning by an Old Guy. CHANCE, 37(3), 13–21.](https://canvas.duke.edu/courses/51767/files?preview=2439624)
+[Rodgers, J. L. (2024). Reading Harry Potter in French: Using Regression to Evaluate Foreign Language Vocabulary Learning by an Old Guy. CHANCE, 37(3), 13–21.](https://canvas.duke.edu/courses/73984/files?preview=4295020)
 :::
 
 ## Example: Reading Harry Potter
@@ -142,13 +142,13 @@ Pew Research Center conducted the 2025 [What Web Browsing Data Tells Us About Ho
 :::
 ::::
 
-## Example: AI mentions 
+## Example: AI mentions
 
 Researchers used logistic regression to classify online articles in which AI was a central focus versus an incidental mention.
 
 ::::: columns
 ::: {.column width="70%"}
-![Source: [Pew Research Center](https://www.pewresearch.org/data-labs/2025/05/23/methodology-metered-data-ai/)](images/clipboard-598876154.png){alt="Source: Pew Research Center" fig-align="center" width="50%"}
+![Source: Pew Research Center](images/clipboard-598876154.png){fig-align="center" width="50%"}
 :::
 
 ::: {.column width="30%"}
@@ -212,7 +212,7 @@ By the end of the semester, you will be able to...
 ::: {.fragment fragment-index="3"}
 ### Special topics {style="color: #993399"}
 
--   TBD
+<br>
 :::
 
 ::: {.fragment fragment-index="4"}
@@ -221,6 +221,7 @@ By the end of the semester, you will be able to...
 -   Computing using R and GitHub
 -   Presenting statistical results
 -   Collaboration and teamwork
+-   Ethics
 :::
 ::::::
 :::::::::
